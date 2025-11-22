@@ -93,10 +93,10 @@ CONFIG = {
     "feature_size": 16,
     "drop_rate": 0.0,
     "window_size": 6,
-    "target_spacing": (1.0, 1.0, 1.0),
-    "roi_size": (80, 80, 80),
+    "target_spacing": (1.0, 1.0, 0.5),  # depth shouldn't be more than 48
+    "roi_size": (96, 96, 96),  # needs divisible by 32
     "crop_margin": 20,
-    "cache_rate": 1.0,
+    "cache_rate": 0.85,  # for speed
     "train_cache_workers": 2,
     "val_cache_workers": 2,
     "swi_batch_size": 1,
