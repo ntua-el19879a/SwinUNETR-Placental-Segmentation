@@ -101,7 +101,7 @@ CONFIG = {
     "val_cache_workers": 2,
     "swi_batch_size": 1,
     "overlap": 0.4,
-    "init_threshold": 0.5,
+    "init_threshold": 0.1,
     "patience": 25,
     "min_delta": 0.001,
     "num_samples": 1,
