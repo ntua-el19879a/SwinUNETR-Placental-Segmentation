@@ -1,8 +1,20 @@
-# !pip install -q monai einops nibabel
-from tqdm.auto import tqdm
-from pathlib import Path
-import matplotlib
-import matplotlib.pyplot as plt
+import gc
+import json
+import math
+import sys
+import torch
+import numpy as np
+import shutil
+import warnings
+import random
+import os
+from sklearn.model_selection import train_test_split
+from torch.optim.lr_scheduler import LinearLR, CosineAnnealingLR, SequentialLR
+from monai.losses import DiceCELoss
+from monai.networks.nets import SwinUNETR
+from monai.inferers import sliding_window_inference
+from monai.metrics import DiceMetric
+from monai.data import PersistentDataset, DataLoader, decollate_batch, list_data_collate, Dataset
 from monai.transforms import (
     Compose, LoadImaged, EnsureChannelFirstd, EnsureTyped, Orientationd,
     Spacingd, CropForegroundd, SpatialPadd, DivisiblePadd,
@@ -11,23 +23,11 @@ from monai.transforms import (
     RandGaussianNoised, RandGaussianSmoothd, DeleteItemsd,
     Activations, AsDiscrete, KeepLargestConnectedComponent
 )
-from monai.data import PersistentDataset, DataLoader, decollate_batch, list_data_collate, Dataset
-from monai.metrics import DiceMetric
-from monai.inferers import sliding_window_inference
-from monai.networks.nets import SwinUNETR
-from monai.losses import DiceCELoss
-from torch.optim.lr_scheduler import LinearLR, CosineAnnealingLR, SequentialLR
-from sklearn.model_selection import train_test_split
-import os
-import random
-import warnings
-import shutil
-import numpy as np
-import torch
-import sys
-import math
-import json
-import gc
+import matplotlib.pyplot as plt
+import matplotlib
+from pathlib import Path
+from tqdm.auto import tqdm
+!pip install - q monai einops nibabel
 # imports
 
 
@@ -62,27 +62,27 @@ CONFIG = {
     "labels_dir": "/kaggle/input/labels/masks/",
     "cache_dir": "/kaggle/working/cache_swinunetr_optimized",
     "best_model_path": "/kaggle/working/best_swinunetr_optimized.pth",
-    "clear_cache": False,
+    "clear_cache": True,
 
     # Training hyperparams
     "seed": 121,
-    "epochs": 125,
+    "epochs": 130,
     "batch_size": 1,
     "accum_steps": 4,
     "val_every": 1,
 
     # optimizer
     "base_lr": 1e-5,
-    "max_lr": 5e-4,
+    "max_lr": 4e-4,
     "weight_decay": 2e-5,
     "warmup_epochs": 20,
 
     # for SwinUNETR
-    "feature_size": 24,
-    "drop_rate": 0.05,
+    "feature_size": 36,
+    "drop_rate": 0.,
 
     # transform settings
-    "spacing": (1.75, 1.75, 3.25),
+    "spacing": (2.0, 2.0, 3.0),
     "roi_size": (96, 96, 64),
     "crop_margin": 8,
     "divisible_pad": (32, 32, 16),
@@ -100,7 +100,7 @@ CONFIG = {
 
 
     "patience": 30,
-    "min_delta": 0.001,
+    "min_delta": 0.0,
 
     # change in pos/neg analogy
     "curriculum_stages": [
@@ -632,7 +632,9 @@ for epoch in range(CONFIG["epochs"]):
         if is_best:
             best_metric = vdice
             best_epoch = epoch + 1
+            ema.apply(model)  # acquire the metrics with ema also applied
             torch.save(model.state_dict(), CONFIG["best_model_path"])
+            ema.restore(model)
             epochs_no_improve = 0
         else:
             epochs_no_improve += 1
