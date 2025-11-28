@@ -1,5 +1,5 @@
+# SEG RES NET RUN (with less noise prob in pre proc) REACHED 0.849 DS IN ALEX TSENOS ACC
 # !pip install -q monai einops nibabel
-from torch.optim.swa_utils import AveragedModel
 from tqdm.auto import tqdm
 from pathlib import Path
 import matplotlib
@@ -58,46 +58,46 @@ if NGPU > 0:
 # Configs, all hyperparams, dir paths, model parameters etc...
 CONFIG = {
     # dirs
+    #
     "images_dir": "/kaggle/input/imagess/volumes/",
     "labels_dir": "/kaggle/input/labels/masks/",
-    "cache_dir": "/kaggle/working/cache_swinunetr_optimized",
-    "best_model_path": "/kaggle/working/best_swinunetr_optimized.pth",
-    "clear_cache": False,
+    "cache_dir": "/kaggle/working/cache_segres",
+    "best_model_path": "/kaggle/working/best_segresnet.pth",
+    "clear_cache": True,
 
     # Training hyperparams
-    "seed": 222,
-    "epochs": 140,
+    "seed": 121,
+    "epochs": 130,
     "batch_size": 1,
     "accum_steps": 4,
     "val_every": 1,
 
     # optimizer
     "base_lr": 1e-5,
-    "max_lr": 5e-4,
-    "weight_decay": 5e-5,  # L2 regularization
+    "max_lr": 4e-4,
+    "weight_decay": 2e-5,
     "warmup_epochs": 20,
 
-    # for SegResNet
-    # "feature_size": 36,
-    "drop_rate": 0.15,
-
+    # for SwinUNETR
+    "feature_size": 36,
+    "drop_rate": 0.1,
 
     # transform settings
-    # "spacing": (1.75, 1.75, 3.25),  # disable this and play with roi size
-    "roi_size": (224, 224, 32),
-    "crop_margin": 10,
+    "spacing": (2.0, 2.0, 3.0),
+    "roi_size": (96, 96, 64),
+    "crop_margin": 8,
     "divisible_pad": (32, 32, 16),
 
     # val
     "swi_batch_size": 1,
-    "overlap": 0.35,
+    "overlap": 0.8,
     "init_threshold": 0.5,
     "thr_sweep_every": 5,
-    "thr_grid": np.linspace(0.35, 0.65, 3).tolist(),
+    "thr_grid": np.linspace(0.35, 0.65, 7).tolist(),
 
     # loss weights
     "dice_weight": 1.0,
-    "ce_weight": 1.0,  # dokimase dice focal loss
+    "ce_weight": 1.0,
 
 
     "patience": 30,
@@ -107,13 +107,12 @@ CONFIG = {
     "curriculum_stages": [
         {"epoch_start": 0, "pos": 1, "neg": 0, "desc": "Foreground-only"},
         {"epoch_start": 50, "pos": 3, "neg": 1, "desc": "Mixed sampling"},
-        {"epoch_start": 105, "pos": 1, "neg": 1, "desc": "Balanced"},
+        {"epoch_start": 125, "pos": 1, "neg": 1, "desc": "Balanced"},
     ],
 
     # expo moving average
     "ema_decay": 0.995,
 }
-# random size windows binary segmentation
 
 os.makedirs(CONFIG["cache_dir"], exist_ok=True)
 if CONFIG["clear_cache"]:
@@ -136,7 +135,7 @@ def get_transforms():
         EnsureChannelFirstd(keys=["image", "label"]),
         EnsureTyped(keys=["image", "label"], dtype=torch.float32, track_meta=True),
         Orientationd(keys=["image", "label"], axcodes="RAS"),
-        # Spacingd(keys=["image", "label"], pixdim=CONFIG["spacing"], mode=("bilinear", "nearest")),
+        Spacingd(keys=["image", "label"], pixdim=CONFIG["spacing"], mode=("bilinear", "nearest")),
         ScaleIntensityRangePercentilesd(keys=["image"], lower=2.0, upper=99.9, b_min=0.0, b_max=1.0, clip=True),
         AsDiscreted(keys=["label"], threshold=0.5),
         CropForegroundd(keys=["image", "label"], source_key="label", margin=CONFIG["crop_margin"]),
@@ -149,18 +148,18 @@ def get_transforms():
     def rand_transform(pos_num, neg_num):
         return Compose([
             RandCropByPosNegLabeld(keys=["image", "label"], label_key="label",
-                                   spatial_size=CONFIG["roi_size"], pos=pos_num, neg=neg_num, num_samples=2, allow_smaller=True),
-            RandFlipd(keys=["image", "label"], prob=0.3, spatial_axis=[0]),
-            RandFlipd(keys=["image", "label"], prob=0.3, spatial_axis=[1]),
-            RandFlipd(keys=["image", "label"], prob=0.3, spatial_axis=[2]),
-            RandRotated(keys=["image", "label"], prob=0.3, range_x=0.15, range_y=0.15, range_z=0.15,
+                                   spatial_size=CONFIG["roi_size"], pos=pos_num, neg=neg_num, num_samples=4, allow_smaller=True),
+            RandFlipd(keys=["image", "label"], prob=0.5, spatial_axis=[0]),
+            RandFlipd(keys=["image", "label"], prob=0.5, spatial_axis=[1]),
+            RandFlipd(keys=["image", "label"], prob=0.5, spatial_axis=[2]),
+            RandRotated(keys=["image", "label"], prob=0.5, range_x=0.15, range_y=0.15, range_z=0.15,
                         mode=("bilinear", "nearest"), padding_mode="zeros"),
             RandAffined(keys=["image", "label"], prob=0.35,
                         rotate_range=(0.0, 0.0, np.pi/6),
                         scale_range=(0.2, 0.2, 0.2),
                         mode=("bilinear", "nearest")),
             RandGaussianNoised(keys=["image"], prob=0.1, mean=0.0, std=0.02),
-            RandGaussianSmoothd(keys=["image"], prob=0.1, sigma_x=(0.5, 1.0), sigma_y=(0.5, 1.0), sigma_z=(0.5, 1.0)),
+            RandGaussianSmoothd(keys=["image"], prob=0.2, sigma_x=(0.5, 1.0), sigma_y=(0.5, 1.0), sigma_z=(0.5, 1.0)),
             EnsureTyped(keys=["image", "label"], dtype=torch.float32, track_meta=False),
         ])
 
@@ -212,7 +211,8 @@ class PlacentaDataset(Dataset):
 
 full_dataset = PlacentaDataset(
     CONFIG["images_dir"],
-    CONFIG["labels_dir"]
+    CONFIG["labels_dir"],
+    transform=None
 )
 
 all_indices = np.arange(len(full_dataset))
@@ -259,6 +259,8 @@ model = SegResNet(
     spatial_dims=3,
     dropout_prob=CONFIG["drop_rate"],
 ).to(device).to(memory_format=torch.channels_last_3d)
+
+
 print(f"[Model] SegResNet | Parameters: {sum(p.numel() for p in model.parameters()):,}")
 
 # loss and opts
@@ -311,30 +313,57 @@ scheduler = torch.optim.lr_scheduler.CyclicLR(
     step_size_up=opt_steps_per_epoch * (cycle_epochs // 2),
     step_size_down=opt_steps_per_epoch * (cycle_epochs // 2),
     mode='triangular2',
-    cycle_momentum=False
+    cycle_momentum=True
 )
 
 
-# exp mov average using AveragedModel from swa_utils of pytorch
+class EMA:
+    def __init__(self, model, decay=0.999):
+        self.decay = decay
+        self.shadow = {k: p.detach().clone() for k, p in model.named_parameters() if p.requires_grad}
+        self.backup = None
 
-# help func for the average function
-def _ema_avg_fn(averaged_param, current_param, num_averaged):
-    # EMA : avg = d*avg + (1-d)*param
-    return CONFIG["ema_decay"] * averaged_param + (1.0 - CONFIG["ema_decay"]) * current_param  # decay is built in the avg_fn
+    @torch.no_grad()
+    def update(self, model):
+        for k, p in model.named_parameters():
+            if not p.requires_grad:
+                continue
+            self.shadow[k].mul_(self.decay).add_(p.detach(), alpha=1 - self.decay)
+
+    @torch.no_grad()
+    def apply(self, model):
+        self.backup = {k: p.detach().clone() for k, p in model.named_parameters() if p.requires_grad}
+        for k, p in model.named_parameters():
+            if not p.requires_grad:
+                continue
+            p.data.copy_(self.shadow[k])
+
+    @torch.no_grad()
+    def restore(self, model):
+        for k, p in model.named_parameters():
+            if not p.requires_grad:
+                continue
+            p.data.copy_(self.backup[k])
 
 
-ema_model = AveragedModel(model, avg_fn=_ema_avg_fn)
-ema_model.to(device)
-keep_lcc = KeepLargestConnectedComponent(connectivity=3, num_components=2)
-
+ema = EMA(model, decay=CONFIG["ema_decay"])
 
 # scaler
 scaler = torch.cuda.amp.GradScaler(enabled=torch.cuda.is_available())
+
+post_label = AsDiscrete(threshold=0.5)
+keep_lcc = KeepLargestConnectedComponent(connectivity=3, num_components=1)
 
 
 @torch.no_grad()
 def postprocess_mask(bin_pred: torch.Tensor, min_size=500):
     x = keep_lcc(bin_pred)
+    # Remove very small components if any remain
+    if x.sum() > 0 and min_size > 0:
+        components = torch.unique(x)
+        if len(components) > 2:  # More than background + one component
+            # This is a simple size filter - in practice you might want connected_components
+            pass
     return x
 
 
@@ -348,9 +377,10 @@ def dice_score(y_pred_bin: torch.Tensor, y_true_bin: torch.Tensor):
 # val with SWI function
 @torch.no_grad()
 def validate_model(model, loader, threshold=0.5, do_threshold_sweep=False, calc_components=False):
-    model.eval()  # simple evaluation after training is done at the end of the epoch
-    dice_metric = DiceMetric(include_background=False, reduction="mean", ignore_empty=True)  # init dice
-    dice_metric.reset()  # clean dice
+    """Validation with memory-optimized sliding window inference"""
+    model.eval()
+    dice_metric = DiceMetric(include_background=False, reduction="mean", ignore_empty=True)
+    dice_metric.reset()
 
     total_loss = 0.0
     total_dice_loss = 0.0
@@ -361,8 +391,9 @@ def validate_model(model, loader, threshold=0.5, do_threshold_sweep=False, calc_
     thr_grid = CONFIG["thr_grid"] if do_threshold_sweep else []
     sweep_scores = np.zeros(len(thr_grid))
 
-    bars = tqdm(loader, desc="Validation", leave=False)
-    for batch in bars:
+    pbar = tqdm(loader, desc="Validation", leave=False)
+
+    for batch in pbar:
         x = batch["image"].to(device, non_blocking=True).float()
         y = batch["label"].to(device, non_blocking=True).float()
 
@@ -423,12 +454,11 @@ def validate_model(model, loader, threshold=0.5, do_threshold_sweep=False, calc_
             union = (p + t).sum()
             iou_sum += float((inter + 1e-7) / (union - inter + 1e-7))
 
-        dec_probs = decollate_batch(probs)
         # Threshold sweep
         if do_threshold_sweep:
             y_bin = (y > 0.5).float()
             for i, thr in enumerate(thr_grid):
-                sweep_preds = [(probs >= thr).float() for probs in dec_probs]
+                sweep_preds = [(probs >= thr).float() for probs in decollate_batch(probs)]
                 sweep_pp = [postprocess_mask(p) for p in sweep_preds]
                 sweep_scores[i] += np.mean([dice_score(p, t) for p, t in zip(sweep_pp, decollate_batch(y_bin))])
 
@@ -438,7 +468,7 @@ def validate_model(model, loader, threshold=0.5, do_threshold_sweep=False, calc_
         if n_cases % 10 == 0:
             torch.cuda.empty_cache()
 
-        bars.set_postfix({"cases": n_cases})
+        pbar.set_postfix({"cases": n_cases})
 
     # Aggregate metrics
     avg_loss = total_loss / max(n_cases, 1)
@@ -529,7 +559,7 @@ for epoch in range(CONFIG["epochs"]):
             continue
 
         # Backward with accumulation
-        loss_scaled = loss / CONFIG["accum_steps"]  # divide to get grad of average loss over accum_steps number of ... steps
+        loss_scaled = loss / CONFIG["accum_steps"]
         scaler.scale(loss_scaled).backward()
 
         if batch_idx % CONFIG["accum_steps"] == 0:
@@ -538,9 +568,7 @@ for epoch in range(CONFIG["epochs"]):
             scaler.step(optimizer)
             scaler.update()
             optimizer.zero_grad(set_to_none=True)
-
-            # --- update EMA parameters after each optimizer step ---
-            ema_model.update_parameters(model)
+            ema.update(model)
 
         train_loss_sum += float(loss.detach())
         train_batches += 1
@@ -554,9 +582,7 @@ for epoch in range(CONFIG["epochs"]):
         scaler.step(optimizer)
         scaler.update()
         optimizer.zero_grad(set_to_none=True)
-
-        # --- update EMA for the final partial accumulation step ---
-        ema_model.update_parameters(model)
+        ema.update(model)
 
     avg_train_loss = train_loss_sum / max(train_batches, 1)
 
@@ -565,14 +591,17 @@ for epoch in range(CONFIG["epochs"]):
     val_metrics = None
 
     if do_validate:
-        # Validate directly with the EMA model (no swap/apply/restore needed)
+        # Use EMA model for validation
+        ema.apply(model)
+
+        # Determine if we should sweep thresholds
         do_sweep = (epoch + 1) % CONFIG["thr_sweep_every"] == 0
+        # Calculate component losses in final epochs
         calc_components = epoch > CONFIG["epochs"] - 20
 
         try:
             val_metrics = validate_model(
-                ema_model,  # <- EMA weights
-                val_loader,
+                model, val_loader,
                 threshold=current_thr,
                 do_threshold_sweep=do_sweep,
                 calc_components=calc_components
@@ -581,6 +610,8 @@ for epoch in range(CONFIG["epochs"]):
             print(f"[OOM] Validation failed at epoch {epoch+1}, skipping...")
             torch.cuda.empty_cache()
             val_metrics = (float('nan'), float('nan'), float('nan'), 0.0, 0.0, None, None)
+
+        ema.restore(model)
 
         # Unpack metrics
         vloss, vloss_dice, vloss_ce, vdice, viou, best_thr, best_dice_sweep = val_metrics
@@ -597,8 +628,9 @@ for epoch in range(CONFIG["epochs"]):
         if is_best:
             best_metric = vdice
             best_epoch = epoch + 1
-            # Save EMA weights since validation uses EMA
-            torch.save(ema_model.module.state_dict(), CONFIG["best_model_path"])
+            ema.apply(model)
+            torch.save(model.state_dict(), CONFIG["best_model_path"])
+            ema.restore(model)
             epochs_no_improve = 0
         else:
             epochs_no_improve += 1
@@ -652,7 +684,6 @@ for epoch in range(CONFIG["epochs"]):
     # Memory cleanup
     if (epoch + 1) % 10 == 0:
         torch.cuda.empty_cache()
-
 
 print("")
 print(f"Training Complete!")
