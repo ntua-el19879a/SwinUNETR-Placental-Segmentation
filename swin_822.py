@@ -1,3 +1,5 @@
+!pip install -q monai einops nibabel
+
 import gc
 import json
 import math
@@ -27,7 +29,7 @@ import matplotlib.pyplot as plt
 import matplotlib
 from pathlib import Path
 from tqdm.auto import tqdm
-!pip install - q monai einops nibabel
+
 # imports
 
 
@@ -66,33 +68,33 @@ CONFIG = {
 
     # Training hyperparams
     "seed": 121,
-    "epochs": 130,
+    "epochs": 120,
     "batch_size": 1,
     "accum_steps": 4,
     "val_every": 1,
 
     # optimizer
-    "base_lr": 1e-5,
+    "base_lr": 2.5e-5,
     "max_lr": 4e-4,
     "weight_decay": 2e-5,
     "warmup_epochs": 20,
 
     # for SwinUNETR
-    "feature_size": 36,
+    "feature_size": 60,
     "drop_rate": 0.,
 
     # transform settings
-    "spacing": (2.0, 2.0, 3.0),
+    "spacing": (2.0, 2.0, 2.0),
     "roi_size": (96, 96, 64),
     "crop_margin": 8,
     "divisible_pad": (32, 32, 16),
 
     # val
     "swi_batch_size": 1,
-    "overlap": 0.8,
+    "overlap": 0.5,
     "init_threshold": 0.5,
     "thr_sweep_every": 5,
-    "thr_grid": np.linspace(0.35, 0.65, 7).tolist(),
+    "thr_grid": np.linspace(0.35, 0.65, 5).tolist(),
 
     # loss weights
     "dice_weight": 1.0,
@@ -105,12 +107,12 @@ CONFIG = {
     # change in pos/neg analogy
     "curriculum_stages": [
         {"epoch_start": 0, "pos": 1, "neg": 0, "desc": "Foreground-only"},
-        {"epoch_start": 50, "pos": 3, "neg": 1, "desc": "Mixed sampling"},
-        {"epoch_start": 125, "pos": 1, "neg": 1, "desc": "Balanced"},
+        {"epoch_start": 40, "pos": 3, "neg": 1, "desc": "Mixed sampling"},
+        {"epoch_start": 70, "pos": 1, "neg": 1, "desc": "Balanced"},
     ],
 
     # expo moving average
-    "ema_decay": 0.995,
+    "ema_decay": 0.975,
 }
 
 os.makedirs(CONFIG["cache_dir"], exist_ok=True)
@@ -157,8 +159,8 @@ def get_transforms():
                         rotate_range=(0.0, 0.0, np.pi/6),
                         scale_range=(0.2, 0.2, 0.2),
                         mode=("bilinear", "nearest")),
-            RandGaussianNoised(keys=["image"], prob=0.5, mean=0.0, std=0.02),
-            RandGaussianSmoothd(keys=["image"], prob=0.3, sigma_x=(0.5, 1.0), sigma_y=(0.5, 1.0), sigma_z=(0.5, 1.0)),
+            RandGaussianNoised(keys=["image"], prob=0.2, mean=0.0, std=0.02),
+            RandGaussianSmoothd(keys=["image"], prob=0.2, sigma_x=(0.5, 1.0), sigma_y=(0.5, 1.0), sigma_z=(0.5, 1.0)),
             EnsureTyped(keys=["image", "label"], dtype=torch.float32, track_meta=False),
         ])
 
@@ -256,7 +258,7 @@ model = SwinUNETR(
     in_channels=1,
     out_channels=1,
     feature_size=CONFIG["feature_size"],
-    window_size=5,
+    window_size=6,
     depths=(2, 2, 2, 2),
     use_checkpoint=True,
     spatial_dims=3,
@@ -308,7 +310,7 @@ def compute_opt_steps_per_epoch(dloader_len, accum_steps):
 
 
 opt_steps_per_epoch = compute_opt_steps_per_epoch(len(train_loader), CONFIG["accum_steps"])
-cycle_epochs = 10
+cycle_epochs = 4
 
 scheduler = torch.optim.lr_scheduler.CyclicLR(
     optimizer,
