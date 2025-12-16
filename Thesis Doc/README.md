@@ -1,5 +1,5 @@
 <p align="center">
-  Το project είναι διαθέσιμο και στο Overleaf, τόσο στην <a href="https://www.overleaf.com/read/jyftxbtpzbtz">ελληνική</a> όσο και στην <a href="https://www.overleaf.com/read/hxhpdrdznqmd">αγγλική</a> έκδοση.
+  Διπλωματική Εργασία Φοιτητή Γρηγορίου Τσένου
 </p>
 
 <p align="center">
