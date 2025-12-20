@@ -1,58 +1,57 @@
 \begin{thebibliography}{10}
 
-\bibitem{LiArTs13}
-{{\latintext J.{ }Liaperdos, A.{ }Arapoyanni \textgreek{kai} Y.{ }Tsiatouhas}}.
-\newblock {{\latintext {\color{\colouredtextcolor} {\em Adjustable {RF} Mixers' Alternate Test Efficiency Optimization by the Reduction of Test Observables}}}}.
-\newblock {{\latintext {\em {IEEE} Transactions on Computer-Aided Design of Integrated Circuits and Systems}}}, 32(9):1383--1394,   2013.
+\bibitem{torrentsbarrena2019fetalreview}
+{{\latintext Jordina{ }Torrents-Barrena, Gemma{ }Piella, Narc{\'i}s{ }Masoller, Eduard{ }Gratac{\'o}s, Elisenda{ }Eixarch, Mario{ }Ceresa \textgreek{kai} Miguel {\'A}ngel{ }Gonz{\'a}lez~Ballester}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Segmentation and classification in {MRI} and {US} fetal imaging: Recent trends and future prospects}}}}.
+\newblock {{\latintext {\em Medical Image Analysis}}}, 51:61--88, 2019.
 
-\bibitem{LaTeXProject}
-{{\latintext {\color{\colouredtextcolor} {\em {LaTeX} Project}}}}.
-\newblock {{\latintext \url{http://www.latex-project.org}}}.
-\newblock \textgreek{Ημερομηνία πρόσβασης}: 13-11-2014.
+\bibitem{ronneberger2015unetconvolutionalnetworksbiomedical}
+{{\latintext Olaf{ }Ronneberger, Philipp{ }Fischer \textgreek{kai} Thomas{ }Brox}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em U-Net: Convolutional Networks for Biomedical Image Segmentation}}}}.
+\newblock 2015.
 
-\bibitem{greekbook}
-{{\latintext { }\textgreek{Ι. Κάβουρας}}}.
-\newblock {{\latintext {\color{\colouredtextcolor} {\em \textgreek{Συστήματα Υπολογιστών}}}}}.
-\newblock {{\latintext \textgreek{Κλειδάριθμος}}}, {{\latintext \textgreek{Αθήνα}}}, 3\textgreek{h} \textgreek{'ekdosh}, 1991.
+\bibitem{Litjens_2017}
+{{\latintext Geert{ }Litjens, Thijs{ }Kooi, Babak Ehteshami{ }Bejnordi, Arnaud Arindra Adiyoso{ }Setio, Francesco{ }Ciompi, Mohsen{ }Ghafoorian, Jeroen A.W.M.van der{ }Laak, Bramvan{ }Ginneken \textgreek{kai} Clara I.{ }Sánchez}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em A survey on deep learning in medical image analysis}}}}.
+\newblock {{\latintext {\em Medical Image Analysis}}}, 42:60–88,   2017.
 
-\bibitem{elli05}
-{{\latintext { }\textgreek{Ε. Ανδρουλάκη}}}.
-\newblock {\color{\colouredtextcolor} {{\latintext {\em \textgreek{Υλοποίηση Ενεργού Μηχανισμού σε Σύστημα Ομότιμων Βάσεων}}}}}.
-\newblock {{\latintext \textgreek{Ptuqiak'h ergas'ia}}}, {{\latintext KDBS Lab, \textgreek{Εθνικό Μετσόβιο Πολυτεχνείο}}},   2005.
+\bibitem{Alansary2016PlacentaMotionMRI}
+{{\latintext Amir{ }Alansary, Konstantinos{ }Kamnitsas, Alice{ }Davidson, Rostislav{ }Khlebnikov, Martin{ }Rajchl, Christina{ }Malamateniou, Mary{ }Rutherford, Joseph V.{ }Hajnal, Ben{ }Glocker, Daniel{ }Rueckert \textgreek{kai} Bernhard{ }Kainz}}.
+\newblock {\color{\colouredtextcolor} {{\latintext {\em Fast Fully Automatic Segmentation of the Human Placenta from Motion Corrupted MRI}}}}.
+\newblock {{\latintext  {\em Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2016}}}, \textgreek{t'omos} 9901 \textgreek{sto} {\em {{\latintext Lecture Notes in Computer Science}}}, \textgreek{sel'ides} 589--597. {{\latintext Springer}}, 2016.
 
-\bibitem{goossens93}
-{{\latintext M.{ }Goossens, F.{ }Mittelbach \textgreek{kai} A.{ }Samarin}}.
-\newblock {{\latintext {\color{\colouredtextcolor} {\em The LaTeX Companion}}}}.
-\newblock {{\latintext Addison-Wesley}}, {{\latintext Reading, Massachusetts}}, 9\textgreek{h} \textgreek{'ekdosh}, 1993.
+\bibitem{Wang2016SlicSeg}
+{{\latintext Guotai{ }Wang, Maria A.{ }Zuluaga, Rosalind{ }Pratt, Michael{ }Aertsen, Tom{ }Doel, Maria{ }Klusmann, Anna L.{ }David, Jan{ }Deprest, Tom{ }Vercauteren \textgreek{kai} S{\'e}bastien{ }Ourselin}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Slic-Seg: A minimally interactive segmentation of the placenta from sparse and motion-corrupted fetal MRI in multiple views}}}}.
+\newblock {{\latintext {\em Medical Image Analysis}}}, 34:137--147, 2016.
 
-\bibitem{dcis2011}
-{{\latintext I.{ }Liaperdos, L.{ }Dermentzoglou, A.{ }Arapoyanni \textgreek{kai} Y.{ }Tsiatouhas}}.
-\newblock {\color{\colouredtextcolor} {{\latintext {\em Fault Detection in {RF} Mixers Combining Defect-Oriented and Alternate Test Strategies}}}}.
-\newblock {{\latintext  {\em 26th Conference on Design of Circuits and Integrated Systems (DCIS)}}}, {{\latintext San Sebastian, Spain}},   2011.
+\bibitem{Tustison2010N4ITK}
+{{\latintext Nicholas J.{ }Tustison, Brian B.{ }Avants, Philip A.{ }Cook, Yuanjie{ }Zheng, Alexander{ }Egan, Paul A.{ }Yushkevich \textgreek{kai} James C.{ }Gee}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em N4ITK: Improved N3 Bias Correction}}}}.
+\newblock {{\latintext {\em IEEE Transactions on Medical Imaging}}}, 29(6):1310--1320, 2010.
 
-\bibitem{zoi04}
-{{\latintext { }\textgreek{Ζ. Καούδη}}}.
-\newblock {\color{\colouredtextcolor} {{\latintext {\em \textgreek{Πρότυπο Σύστημα Αποθήκευσης και Διαχείρισης Σχημάτων \en{RDFS}}}}}}.
-\newblock {{\latintext \textgreek{Diplwmatik'h ergas'ia}}}, {{\latintext \textgreek{Εθνικό Μετσόβιο Πολυτεχνείο}}},   2004.
+\bibitem{vaswani2017attention}
+{{\latintext Ashish{ }Vaswani, Noam{ }Shazeer, Niki{ }Parmar, Jakob{ }Uszkoreit, Llion{ }Jones, Aidan N.{ }Gomez, Lukasz{ }Kaiser \textgreek{kai} Illia{ }Polosukhin}}.
+\newblock {\color{\colouredtextcolor} {{\latintext {\em Attention Is All You Need}}}}.
+\newblock {{\latintext  {\em Advances in Neural Information Processing Systems (NeurIPS)}}}, 2017.
 
-\bibitem{master04}
-{{\latintext { }\textgreek{Ζ. Λάσκαρη}}}.
-\newblock {\color{\colouredtextcolor} {{\latintext {\em \textgreek{Κοινωνική Ανάλυση των Ταινιών της \en{Finos Films}}}}}}.
-\newblock {{\latintext \textgreek{Metaptuqiak'h diplwmatik'h ergas'ia}}}, {{\latintext \textgreek{Εθνικό Μετσόβιο Πολυτεχνείο}}},   2012.
+\bibitem{hatamizadeh2022unetr}
+{{\latintext Ali{ }Hatamizadeh, Yucheng{ }Tang, Vishwesh{ }Nath, Dong{ }Yang, Andriy{ }Myronenko, Holger R.{ }Roth \textgreek{kai} Daguang{ }Xu}}.
+\newblock {\color{\colouredtextcolor} {{\latintext {\em UNETR: Transformers for 3D Medical Image Segmentation}}}}.
+\newblock {{\latintext  {\em Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)}}}, 2022.
 
-\bibitem{phd045}
-{{\latintext { }\textgreek{Ζ. Κουρούκλη}}}.
-\newblock {\color{\colouredtextcolor} {{\latintext {\em \textgreek{Κατανεμημένα Συστήματα}}}}}.
-\newblock {{\latintext \textgreek{Didaktorik'h Diatrib'h}}}, {{\latintext \textgreek{ΤΕΙ Πελοποννήσου}}},   2013.
+\bibitem{hatamizadeh2022swinunetr}
+{{\latintext Ali{ }Hatamizadeh, Vishwesh{ }Nath, Yucheng{ }Tang, Dong{ }Yang, Holger R.{ }Roth \textgreek{kai} Daguang{ }Xu}}.
+\newblock {\color{\colouredtextcolor} {{\latintext {\em Swin UNETR: Swin Transformers for Semantic Segmentation of Brain Tumors in MRI Images}}}}.
+\newblock {{\latintext  {\em Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries (BrainLes 2021)}}}, \textgreek{t'omos} 12962 \textgreek{sto} {\em {{\latintext Lecture Notes in Computer Science}}}, \textgreek{sel'ides} 272--284. 2022.
 
-\bibitem{viswanathan2014convenient}
-{{\latintext P.{ }Viswanathan, G.{ }Winner \textgreek{kai} P.{ }Vyas}}.
-\newblock {\color{\colouredtextcolor} {{\latintext {\em Convenient Provisioning of Embedded Devices with WiFi Capability}}}}.
-\newblock \textgreek{D'iplwma Euresiteqn'iac } \textlatin{US Patent 8,665,744}, 2014.
+\bibitem{chen2021transunet}
+{{\latintext Jieneng{ }Chen, Yongyi{ }Lu, Qihang{ }Yu, Xiangde{ }Luo, Ehsan{ }Adeli, Yan{ }Wang, Le{ }Lu, Alan L.{ }Yuille \textgreek{kai} Yuyin{ }Zhou}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation}}}}.
+\newblock {{\latintext {\em arXiv preprint arXiv:2102.04306}}}, 2021.
 
-\bibitem{MSU-CSE-05-29}
-{{\latintext H. Cheng{ }J.~Gao \textgreek{kai} P. N.{ }Tan}}.
-\newblock {\color{\colouredtextcolor} {{\latintext {\em A Framework for Incorporating Labeled Examples into Anomaly Detection}}}}.
-\newblock \textgreek{Teqnik'h Anafor'a me arijm'o} \textlatin{MSU-CSE-05-29}, {{\latintext Department of Computer Science, Michigan State University}}, {{\latintext East Lansing, Michigan}}, 2005.
+\bibitem{vaswani2023attentionneed}
+{{\latintext Ashish{ }Vaswani, Noam{ }Shazeer, Niki{ }Parmar, Jakob{ }Uszkoreit, Llion{ }Jones, Aidan N.{ }Gomez, Lukasz{ }Kaiser \textgreek{kai} Illia{ }Polosukhin}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Attention Is All You Need}}}}, 2023.
 
 \end{thebibliography}

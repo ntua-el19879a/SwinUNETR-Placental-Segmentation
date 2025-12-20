@@ -1,18 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%
-%%	Template for typesetting Diploma Theses (pdfLaTeX version)
-%%
-%%	Evangelos Stamos , January 2019 - October 2020
-%%	(estamos@e-ce.uth.gr)
-%%
-%%	(adopted from the NTUA template for diploma theses 
-%%	[http://web.dbnet.ntua.gr/el/diplomas.html])
-%%
-%%	Last update: Jul 29th, 2025
-%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%
-
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 
 % Class Information
