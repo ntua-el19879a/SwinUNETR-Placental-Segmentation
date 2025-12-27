@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.11.7)  21 DEC 2025 00:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.11.7)  21 DEC 2025 19:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1190,8 +1190,8 @@ LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 17
  (/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 ))
-Package hyperref Info: Option `colorlinks' set `true' on input line 246.
-Package hyperref Info: Option `unicode' set `true' on input line 246.
+Package hyperref Info: Option `colorlinks' set `true' on input line 248.
+Package hyperref Info: Option `unicode' set `true' on input line 248.
  (/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) (/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/latex/hypcap/hypcap.sty
@@ -1199,10 +1199,10 @@ Package: hypcap 2024-07-26 v1.13 Adjusting the anchors of captions (HO)
  (/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 ))
-LaTeX Font Info:    Trying to load font information for LGR+mak on input line 246.
+LaTeX Font Info:    Trying to load font information for LGR+mak on input line 248.
  (/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/latex/kerkis/lgrmak.fd)
 LaTeX Font Info:    Font shape `LGR/mak/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 246.
+(Font)              scaled to size 9.85492pt on input line 248.
  (./main.aux
 LaTeX Font Info:    Trying to load font information for T1+mak on input line 9.
  (/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/latex/kerkis/t1mak.fd)
@@ -1211,42 +1211,42 @@ LaTeX Font Info:    Font shape `T1/mak/m/n' will be
  (./front_matter/abstract.aux) (./front_matter/acknowledgements.aux) (./front_matter/preface.aux) (./body_matter/intro.aux) (./body_matter/chap2.aux) (./body_matter/chap3.aux) (./body_matter/chap4.aux) (./body_matter/chap5.aux) (./body_matter/chap6.aux) (./body_matter/chap7.aux) (./body_matter/chap8.aux) (./body_matter/chap9.aux) (./back_matter/appA.aux) (./back_matter/appB.aux) (./back_matter/appC.aux) (./back_matter/appD.aux) (./back_matter/appE.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 246.
-LaTeX Font Info:    Trying to load font information for OML+txmi on input line 246.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 248.
+LaTeX Font Info:    Trying to load font information for OML+txmi on input line 248.
  (/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 246.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 246.
-LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 246.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 248.
+LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 248.
  (/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 246.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 246.
-LaTeX Font Info:    ... okay on input line 246.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 246.
-LaTeX Font Info:    ... okay on input line 246.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 246.
-LaTeX Font Info:    ... okay on input line 246.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 246.
-LaTeX Font Info:    Trying to load font information for OMX+txex on input line 246.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 248.
+LaTeX Font Info:    Trying to load font information for OMX+txex on input line 248.
  (/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 246.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 246.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 246.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 248.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 248.
  (/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 246.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 246.
-LaTeX Font Info:    ... okay on input line 246.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 246.
-LaTeX Font Info:    ... okay on input line 246.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 246.
-LaTeX Font Info:    ... okay on input line 246.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
  (/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count365
@@ -1262,44 +1262,44 @@ LaTeX Font Info:    ... okay on input line 246.
 \everyMPtoPDFconversion=\toks55
 )
 Package newfloat Info: `float' package detected.
-Package hyperref Info: Link coloring ON on input line 246.
+Package hyperref Info: Link coloring ON on input line 248.
 \c@lstlisting=\count371
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hypcap package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for OT1+txr on input line 249.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 251.
  (/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for OML+mak on input line 249.
+LaTeX Font Info:    Trying to load font information for OML+mak on input line 251.
  (/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/latex/kerkis/omlmak.fd)
 LaTeX Font Info:    Font shape `OML/mak/m/it' will be
-(Font)              scaled to size 9.85492pt on input line 249.
+(Font)              scaled to size 9.85492pt on input line 251.
 LaTeX Font Info:    Font shape `OML/mak/m/it' will be
-(Font)              scaled to size 7.19995pt on input line 249.
+(Font)              scaled to size 7.19995pt on input line 251.
 LaTeX Font Info:    Font shape `OML/mak/m/it' will be
-(Font)              scaled to size 5.39996pt on input line 249.
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 249.
+(Font)              scaled to size 5.39996pt on input line 251.
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 251.
  (/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 249.
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 251.
  (/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 249.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 251.
  (/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 249.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 251.
  (/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/mak/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 249.
+(Font)              scaled to size 7.19995pt on input line 251.
 LaTeX Font Info:    Font shape `T1/mak/m/n' will be
-(Font)              scaled to size 5.39996pt on input line 249.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 249.
+(Font)              scaled to size 5.39996pt on input line 251.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 251.
  (/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
@@ -1310,53 +1310,53 @@ Package epstopdf Info: Source file: <logo/pyrforos.eps>
 (epstopdf)                    date: 2025-12-16 19:35:37
 (epstopdf)                    size: 58500 bytes
 (epstopdf)             Command: <repstopdf --outfile=logo/pyrforos-eps-converted-to.pdf logo/pyrforos.eps>
-(epstopdf)             \includegraphics on input line 249.
+(epstopdf)             \includegraphics on input line 251.
 Package epstopdf Info: Output file is already uptodate.
 <logo/pyrforos-eps-converted-to.pdf, id=7, 557.08125pt x 557.08125pt>
 File: logo/pyrforos-eps-converted-to.pdf Graphic file (type pdf)
 <use logo/pyrforos-eps-converted-to.pdf>
-Package pdftex.def Info: logo/pyrforos-eps-converted-to.pdf  used on input line 249.
+Package pdftex.def Info: logo/pyrforos-eps-converted-to.pdf  used on input line 251.
 (pdftex.def)             Requested size: 71.13188pt x 71.13104pt.
 LaTeX Font Info:    Font shape `LGR/mak/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 249.
+(Font)              scaled to size 10.79993pt on input line 251.
 LaTeX Font Info:    Font shape `LGR/mak/m/sc' will be
-(Font)              scaled to size 10.79993pt on input line 249.
+(Font)              scaled to size 10.79993pt on input line 251.
 LaTeX Font Info:    Font shape `LGR/mak/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 249.
+(Font)              scaled to size 8.99994pt on input line 251.
 LaTeX Font Info:    Font shape `LGR/mak/m/sc' will be
-(Font)              scaled to size 8.99994pt on input line 249.
+(Font)              scaled to size 8.99994pt on input line 251.
 
-Overfull \hbox (95.13191pt too wide) in paragraph at lines 249--249
+Overfull \hbox (95.13191pt too wide) in paragraph at lines 251--251
  [][] 
  []
 
 LaTeX Font Info:    Font shape `LGR/mak/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 249.
+(Font)              scaled to size 18.66588pt on input line 251.
 LaTeX Font Info:    Font shape `LGR/mak/m/n' will be
-(Font)              scaled to size 17.35912pt on input line 249.
+(Font)              scaled to size 17.35912pt on input line 251.
 LaTeX Font Info:    Font shape `LGR/mak/b/n' will be
-(Font)              scaled to size 17.35912pt on input line 249.
+(Font)              scaled to size 17.35912pt on input line 251.
 LaTeX Font Info:    Font shape `T1/mak/b/n' will be
-(Font)              scaled to size 17.35912pt on input line 249.
+(Font)              scaled to size 17.35912pt on input line 251.
 LaTeX Font Info:    Font shape `LGR/mak/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 249.
+(Font)              scaled to size 12.9599pt on input line 251.
 LaTeX Font Info:    Font shape `LGR/mak/m/it' will be
-(Font)              scaled to size 12.9599pt on input line 249.
+(Font)              scaled to size 12.9599pt on input line 251.
 LaTeX Font Info:    Font shape `LGR/mak/m/sc' will be
-(Font)              scaled to size 18.66588pt on input line 249.
+(Font)              scaled to size 18.66588pt on input line 251.
 LaTeX Font Info:    Font shape `LGR/mak/m/sc' will be
-(Font)              scaled to size 17.35912pt on input line 249.
+(Font)              scaled to size 17.35912pt on input line 251.
 LaTeX Font Info:    Font shape `LGR/mak/m/n' will be
-(Font)              scaled to size 12.0526pt on input line 249.
+(Font)              scaled to size 12.0526pt on input line 251.
 LaTeX Font Info:    Font shape `LGR/mak/b/n' will be
-(Font)              scaled to size 12.0526pt on input line 249.
+(Font)              scaled to size 12.0526pt on input line 251.
 <figures/rdf.png, id=8, 109.40875pt x 119.44624pt>
 File: figures/rdf.png Graphic file (type png)
 <use figures/rdf.png>
-Package pdftex.def Info: figures/rdf.png  used on input line 249.
+Package pdftex.def Info: figures/rdf.png  used on input line 251.
 (pdftex.def)             Requested size: 87.5271pt x 95.55711pt.
 LaTeX Font Info:    Font shape `LGR/mak/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 249.
+(Font)              scaled to size 10.79993pt on input line 251.
 
 
 [1
@@ -1364,7 +1364,7 @@ LaTeX Font Info:    Font shape `LGR/mak/b/n' will be
 
 {/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}{/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/enc/dvips/kerkis/gpkerkis.enc}{/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/enc/dvips/kerkis/kerkisec.enc} <./logo/pyrforos-eps-converted-to.pdf> <./figures/rdf.png>]
 LaTeX Font Info:    Font shape `LGR/mak/m/n' will be
-(Font)              scaled to size 5.39996pt on input line 249.
+(Font)              scaled to size 5.39996pt on input line 251.
 
 
 [2
@@ -1377,24 +1377,24 @@ Package epstopdf Info: Source file: <logo/pyrforos.eps>
 (epstopdf)                    date: 2025-12-16 19:35:37
 (epstopdf)                    size: 58500 bytes
 (epstopdf)             Command: <repstopdf --outfile=logo/pyrforos-eps-converted-to.pdf logo/pyrforos.eps>
-(epstopdf)             \includegraphics on input line 249.
+(epstopdf)             \includegraphics on input line 251.
 Package epstopdf Info: Output file is already uptodate.
 File: logo/pyrforos-eps-converted-to.pdf Graphic file (type pdf)
 <use logo/pyrforos-eps-converted-to.pdf>
-Package pdftex.def Info: logo/pyrforos-eps-converted-to.pdf  used on input line 249.
+Package pdftex.def Info: logo/pyrforos-eps-converted-to.pdf  used on input line 251.
 (pdftex.def)             Requested size: 45.52458pt x 45.51944pt.
 LaTeX Font Info:    Font shape `LGR/mak/m/sc' will be
-(Font)              scaled to size 9.85492pt on input line 249.
+(Font)              scaled to size 9.85492pt on input line 251.
 LaTeX Font Info:    Font shape `LGR/mak/m/n' will be
-(Font)              scaled to size 15.55188pt on input line 249.
+(Font)              scaled to size 15.55188pt on input line 251.
 LaTeX Font Info:    Font shape `LGR/mak/b/n' will be
-(Font)              scaled to size 15.55188pt on input line 249.
+(Font)              scaled to size 15.55188pt on input line 251.
 LaTeX Font Info:    Font shape `T1/mak/b/n' will be
-(Font)              scaled to size 15.55188pt on input line 249.
+(Font)              scaled to size 15.55188pt on input line 251.
 LaTeX Font Info:    Font shape `LGR/mak/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 249.
+(Font)              scaled to size 12.9599pt on input line 251.
 LaTeX Font Info:    Font shape `LGR/mak/m/it' will be
-(Font)              scaled to size 9.85492pt on input line 249.
+(Font)              scaled to size 9.85492pt on input line 251.
 
 
 [3]
@@ -1407,22 +1407,22 @@ Package epstopdf Info: Source file: <logo/pyrforos.eps>
 (epstopdf)                    date: 2025-12-16 19:35:37
 (epstopdf)                    size: 58500 bytes
 (epstopdf)             Command: <repstopdf --outfile=logo/pyrforos-eps-converted-to.pdf logo/pyrforos.eps>
-(epstopdf)             \includegraphics on input line 249.
+(epstopdf)             \includegraphics on input line 251.
 Package epstopdf Info: Output file is already uptodate.
 File: logo/pyrforos-eps-converted-to.pdf Graphic file (type pdf)
 <use logo/pyrforos-eps-converted-to.pdf>
-Package pdftex.def Info: logo/pyrforos-eps-converted-to.pdf  used on input line 249.
+Package pdftex.def Info: logo/pyrforos-eps-converted-to.pdf  used on input line 251.
 (pdftex.def)             Requested size: 45.52458pt x 45.51944pt.
-LaTeX Font Info:    Trying to load font information for TS1+mak on input line 249.
-LaTeX Font Info:    No file TS1mak.fd. on input line 249.
+LaTeX Font Info:    Trying to load font information for TS1+mak on input line 251.
+LaTeX Font Info:    No file TS1mak.fd. on input line 251.
 
 
 LaTeX Font Warning: Font shape `TS1/mak/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textcopyright' on input line 249.
+(Font)              for symbol `textcopyright' on input line 251.
 
 LaTeX Font Info:    Font shape `LGR/mak/b/n' will be
-(Font)              scaled to size 9.85492pt on input line 249.
+(Font)              scaled to size 9.85492pt on input line 251.
 
 
 [5
@@ -1465,25 +1465,25 @@ LaTeX Font Info:    Font shape `T1/mak/b/n' will be
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.253 	\include{front_matter/abstract}
+l.255 	\include{front_matter/abstract}
                                        [3]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.255 ...ου και στην Μητέρα μου}
+l.257 ...ου και στην Μητέρα μου}
                                                    [4
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 255--255
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--255
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
 
  []
 
@@ -1493,7 +1493,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 255--255
 pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.257 	\include
+l.259 	\include
                {front_matter/acknowledgements} [5]
 \openout2 = `front_matter/acknowledgements.aux'.
 
@@ -1519,7 +1519,7 @@ l.8 \begin{acknowledgements}
 LaTeX Font Info:    Font shape `T1/mak/b/n' will be
 (Font)              scaled to size 9.85492pt on input line 7.
 LaTeX Font Info:    Font shape `T1/mak/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 36.
+(Font)              scaled to size 10.79993pt on input line 34.
 
 
 [9])
@@ -1529,9 +1529,9 @@ LaTeX Font Info:    Font shape `T1/mak/b/n' will be
 
 
 LaTeX Font Info:    Font shape `LGR/mak/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 261.
+(Font)              scaled to size 8.09995pt on input line 263.
 LaTeX Font Info:    Font shape `T1/mak/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 261.
+(Font)              scaled to size 8.09995pt on input line 263.
 [10] (./main.lof)
 \tf@lof=\write5
 \openout5 = `main.lof'.
@@ -1598,9 +1598,9 @@ Package lettrine.sty Info: Targeted height = 21.27205pt
 
 [20]
 LaTeX Font Info:    Font shape `T1/mak/b/n' will be
-(Font)              scaled to size 22.39185pt on input line 277.
+(Font)              scaled to size 22.39185pt on input line 279.
 LaTeX Font Info:    Font shape `LGR/mak/b/n' will be
-(Font)              scaled to size 20.82425pt on input line 277.
+(Font)              scaled to size 20.82425pt on input line 279.
 
 
 [21
@@ -1672,7 +1672,7 @@ Package epstopdf Info: Source file: <figures/peerArchitecture.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures/peerArchitecture-eps-converted-to.pdf figures/peerArchitecture.eps>
 (epstopdf)             \includegraphics on input line 23.
 Package epstopdf Info: Output file is already uptodate.
-<figures/peerArchitecture-eps-converted-to.pdf, id=305, 427.5975pt x 545.03625pt>
+<figures/peerArchitecture-eps-converted-to.pdf, id=310, 427.5975pt x 545.03625pt>
 File: figures/peerArchitecture-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/peerArchitecture-eps-converted-to.pdf>
 Package pdftex.def Info: figures/peerArchitecture-eps-converted-to.pdf  used on input line 23.
@@ -1862,7 +1862,7 @@ Overfull \hbox (2.0pt too wide) in paragraph at lines 33--33
 
  (./back_matter/appB.tex
 \textPi \textalpha \textrho \acctonos \textalpha \textrho \texttau \texteta \textmu \textalpha  {\greekscript \textBeta \textnumeralsigngreek }.
-<figures/2.png, id=445, 187.70125pt x 119.44624pt>
+<figures/2.png, id=450, 187.70125pt x 119.44624pt>
 File: figures/2.png Graphic file (type png)
 <use figures/2.png>
 Package pdftex.def Info: figures/2.png  used on input line 25.
@@ -1947,7 +1947,7 @@ LaTeX Warning: Citation `MSU-CSE-05-29' on page 49 undefined on input line 28.
 
 ]
 \textPi \textalpha \textrho \acctonos \textalpha \textrho \texttau \texteta \textmu \textalpha  {\greekscript \textEpsilon \textnumeralsigngreek }.
-<figures/frog.jpg, id=473, 748.7975pt x 741.77126pt>
+<figures/frog.jpg, id=478, 748.7975pt x 741.77126pt>
 File: figures/frog.jpg Graphic file (type jpg)
 <use figures/frog.jpg>
 Package pdftex.def Info: figures/frog.jpg  used on input line 6.
@@ -1999,18 +1999,18 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 31869 strings out of 473190
- 583354 string characters out of 5704335
- 1116311 words of memory out of 5000000
- 54234 multiletter control sequences out of 15000+600000
+ 31871 strings out of 473190
+ 583509 string characters out of 5704335
+ 1116442 words of memory out of 5000000
+ 54235 multiletter control sequences out of 15000+600000
  623843 words of font info for 183 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,107p,1105b,1545s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/kerkis/Kerkis-Bold.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/kerkis/Kerkis-Italic.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/kerkis/Kerkis-SmallCaps.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/kerkis/Kerkis.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb>
-Output written on main.pdf (66 pages, 354435 bytes).
+Output written on main.pdf (66 pages, 355046 bytes).
 PDF statistics:
- 753 PDF objects out of 1000 (max. 8388607)
- 622 compressed objects within 7 object streams
- 159 named destinations out of 1000 (max. 500000)
- 470 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 752 PDF objects out of 1000 (max. 8388607)
+ 621 compressed objects within 7 object streams
+ 160 named destinations out of 1000 (max. 500000)
+ 454 words of extra memory for PDF output out of 10000 (max. 10000000)
 

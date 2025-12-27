@@ -33,46 +33,47 @@ Warning--I didn't find a database entry for "viswanathan2014convenient"
 Warning--I didn't find a database entry for "MSU-CSE-05-29"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty journal in ronneberger2015unetconvolutionalnetworksbiomedical
+Warning--empty journal in gu2023mamba
 Warning--empty publisher in hatamizadeh2022swinunetr
-You've used 11 entries,
+You've used 14 entries,
             3122 wiz_defined-function locations,
-            679 strings with 8377 characters,
-and the built_in function-call counts, 3696 in all, are:
-= -- 231
-> -- 266
-< -- 4
-+ -- 96
-- -- 85
-* -- 385
-:= -- 568
-add.period$ -- 34
-call.type$ -- 11
+            689 strings with 8619 characters,
+and the built_in function-call counts, 3868 in all, are:
+= -- 226
+> -- 275
+< -- 2
++ -- 101
+- -- 87
+* -- 392
+:= -- 608
+add.period$ -- 41
+call.type$ -- 14
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 196
-empty$ -- 339
-format.name$ -- 85
-if$ -- 767
+cite$ -- 17
+duplicate$ -- 215
+empty$ -- 373
+format.name$ -- 87
+if$ -- 797
 int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 10
-newline$ -- 57
-num.names$ -- 11
-pop$ -- 58
+int.to.str$ -- 14
+missing$ -- 12
+newline$ -- 71
+num.names$ -- 14
+pop$ -- 71
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 56
+skip$ -- 54
 stack$ -- 0
-substring$ -- 160
-swap$ -- 91
-text.length$ -- 4
+substring$ -- 117
+swap$ -- 92
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 24
-width$ -- 13
-write$ -- 118
-(There were 13 warnings)
+warning$ -- 3
+while$ -- 23
+width$ -- 16
+write$ -- 143
+(There were 14 warnings)

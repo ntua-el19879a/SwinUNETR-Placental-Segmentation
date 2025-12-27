@@ -5,30 +5,44 @@
 \newblock {{\latintext {\color{\colouredtextcolor} {\em Segmentation and classification in {MRI} and {US} fetal imaging: Recent trends and future prospects}}}}.
 \newblock {{\latintext {\em Medical Image Analysis}}}, 51:61--88, 2019.
 
-\bibitem{ronneberger2015unetconvolutionalnetworksbiomedical}
-{{\latintext Olaf{ }Ronneberger, Philipp{ }Fischer \textgreek{kai} Thomas{ }Brox}}.
-\newblock {{\latintext {\color{\colouredtextcolor} {\em U-Net: Convolutional Networks for Biomedical Image Segmentation}}}}.
-\newblock 2015.
+\bibitem{DBLP:journals/vciba/JittouFR25}
+{{\latintext Asmaa{ }Jittou, Khalid El{ }Fazazy \textgreek{kai} Jamal{ }Riffi}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Placenta segmentation redefined: review of deep learning integration of magnetic resonance imaging and ultrasound imaging}}}}.
+\newblock {{\latintext {\em Vis. Comput. Ind. Biomed. Art}}}, 8(1):17, 2025.
 
 \bibitem{Litjens_2017}
 {{\latintext Geert{ }Litjens, Thijs{ }Kooi, Babak Ehteshami{ }Bejnordi, Arnaud Arindra Adiyoso{ }Setio, Francesco{ }Ciompi, Mohsen{ }Ghafoorian, Jeroen A.W.M.van der{ }Laak, Bramvan{ }Ginneken \textgreek{kai} Clara I.{ }Sánchez}}.
 \newblock {{\latintext {\color{\colouredtextcolor} {\em A survey on deep learning in medical image analysis}}}}.
 \newblock {{\latintext {\em Medical Image Analysis}}}, 42:60–88,   2017.
 
-\bibitem{Alansary2016PlacentaMotionMRI}
-{{\latintext Amir{ }Alansary, Konstantinos{ }Kamnitsas, Alice{ }Davidson, Rostislav{ }Khlebnikov, Martin{ }Rajchl, Christina{ }Malamateniou, Mary{ }Rutherford, Joseph V.{ }Hajnal, Ben{ }Glocker, Daniel{ }Rueckert \textgreek{kai} Bernhard{ }Kainz}}.
-\newblock {\color{\colouredtextcolor} {{\latintext {\em Fast Fully Automatic Segmentation of the Human Placenta from Motion Corrupted MRI}}}}.
-\newblock {{\latintext  {\em Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2016}}}, \textgreek{t'omos} 9901 \textgreek{sto} {\em {{\latintext Lecture Notes in Computer Science}}}, \textgreek{sel'ides} 589--597. {{\latintext Springer}}, 2016.
+\bibitem{ronneberger2015unetconvolutionalnetworksbiomedical}
+{{\latintext Olaf{ }Ronneberger, Philipp{ }Fischer \textgreek{kai} Thomas{ }Brox}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em U-Net: Convolutional Networks for Biomedical Image Segmentation}}}}.
+\newblock 2015.
 
-\bibitem{Wang2016SlicSeg}
-{{\latintext Guotai{ }Wang, Maria A.{ }Zuluaga, Rosalind{ }Pratt, Michael{ }Aertsen, Tom{ }Doel, Maria{ }Klusmann, Anna L.{ }David, Jan{ }Deprest, Tom{ }Vercauteren \textgreek{kai} S{\'e}bastien{ }Ourselin}}.
-\newblock {{\latintext {\color{\colouredtextcolor} {\em Slic-Seg: A minimally interactive segmentation of the placenta from sparse and motion-corrupted fetal MRI in multiple views}}}}.
-\newblock {{\latintext {\em Medical Image Analysis}}}, 34:137--147, 2016.
+\bibitem{gu2023mamba}
+{{\latintext Albert{ }Gu \textgreek{kai} Tri{ }Dao}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Mamba: Linear-Time Sequence Modeling with Selective State Spaces}}}}.
+\newblock 2023.
 
-\bibitem{Tustison2010N4ITK}
-{{\latintext Nicholas J.{ }Tustison, Brian B.{ }Avants, Philip A.{ }Cook, Yuanjie{ }Zheng, Alexander{ }Egan, Paul A.{ }Yushkevich \textgreek{kai} James C.{ }Gee}}.
-\newblock {{\latintext {\color{\colouredtextcolor} {\em N4ITK: Improved N3 Bias Correction}}}}.
-\newblock {{\latintext {\em IEEE Transactions on Medical Imaging}}}, 29(6):1310--1320, 2010.
+\bibitem{xing2024segmambalongrangesequentialmodeling}
+{{\latintext Zhaohu{ }Xing, Tian{ }Ye, Yijun{ }Yang, Guang{ }Liu \textgreek{kai} Lei{ }Zhu}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em SegMamba: Long-range Sequential Modeling Mamba For 3D Medical Image Segmentation}}}}, 2024.
+
+\bibitem{Oppenheimer2018MagneticRI}
+{{\latintext Daniel C{ }Oppenheimer, Parisa{ }Mazaheri, David H.{ }Ballard, Motoyo{ }Yano \textgreek{kai} Kathryn J{ }Fowler}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Magnetic resonance imaging of the placenta and gravid uterus: a pictorial essay}}}}.
+\newblock {{\latintext {\em Abdominal Radiology}}}, 44:669--684, 2018.
+
+\bibitem{ZIMMER2023102639}
+{{\latintext Veronika A.{ }Zimmer, Alberto{ }Gomez, Emily{ }Skelton, Robert{ }Wright, Gavin{ }Wheeler, Shujie{ }Deng, Nooshin{ }Ghavami, Karen{ }Lloyd, Jacqueline{ }Matthew, Bernhard{ }Kainz, Daniel{ }Rueckert, Joseph V.{ }Hajnal \textgreek{kai} Julia A.{ }Schnabel}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Placenta segmentation in ultrasound imaging: Addressing sources of uncertainty and limited field-of-view}}}}.
+\newblock {{\latintext {\em Medical Image Analysis}}}, 83:102639, 2023.
+
+\bibitem{fetalMRIwhatsnew2023}
+{{\latintext Marco{ }Pellegrino \textgreek{kai} { }others}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Fetal {MRI}: what{'}s new? A short review}}}}.
+\newblock {{\latintext {\em Insights into Imaging}}}, 2023.
 
 \bibitem{vaswani2017attention}
 {{\latintext Ashish{ }Vaswani, Noam{ }Shazeer, Niki{ }Parmar, Jakob{ }Uszkoreit, Llion{ }Jones, Aidan N.{ }Gomez, Lukasz{ }Kaiser \textgreek{kai} Illia{ }Polosukhin}}.
