@@ -1,26 +1,66 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
-\citation{ronneberger2015unetconvolutionalnetworksbiomedical}
-\citation{vaswani2017attention}
-\citation{hatamizadeh2022unetr}
-\citation{hatamizadeh2022swinunetr}
-\citation{chen2021transunet}
-\citation{vaswani2023attentionneed}
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Θεωρητικό υπόβαθρο}{23}{chapter.2}\protected@file@percent }
+\citation{burton2015placenta}
+\citation{maltepe2015forgotten}
+\citation{gude2004growth}
+\citation{brosens2011deepplacentation}
+\citation{gude2004growth}
+\citation{maltepe2015forgotten}
+\citation{brosens2011deepplacentation}
+\citation{maltepe2010placenta}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Τμηματοποίηση Ιατρικών Εικόνων και Μαγνητική Τομογραφία}{27}{chapter.2}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loi}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}Αυτόματη τμηματοποίηση εικόνων}{23}{section.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Συνελικτικά Νευρωνικά Δίκτυα}{23}{section.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Αρχιτεκτονική \foreignlanguage  {english}{UNet}}{23}{subsection.2.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Περιορισμοί}{23}{subsection.2.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}\foreignlanguage  {english}{Transformers}}{23}{section.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Χρησιμότητα στην διαδικασία της τμηματοποίησης}{23}{subsection.2.3.1}\protected@file@percent }
+\newlabel{ch:seg_mri}{{2}{27}{Τμηματοποίηση Ιατρικών Εικόνων και Μαγνητική Τομογραφία}{chapter.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Ο πλακούντας: ανατομία, ανάπτυξη και λειτουργίες}{27}{section.2.1}\protected@file@percent }
+\newlabel{sec:placenta_phys}{{2.1}{27}{Ο πλακούντας: ανατομία, ανάπτυξη και λειτουργίες}{section.2.1}{}}
+\babel@aux{greek}{}
+\babel@aux{greek}{}
+\citation{burton2015placenta}
+\citation{maltepe2015forgotten}
+\citation{shahedi2021placenta}
+\babel@aux{greek}{}
+\babel@aux{greek}{}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Η τμηματοποίηση ως υπολογιστικό πρόβλημα}{28}{section.2.2}\protected@file@percent }
+\newlabel{sec:seg_problem}{{2.2}{28}{Η τμηματοποίηση ως υπολογιστικό πρόβλημα}{section.2.2}{}}
+\babel@aux{greek}{}
+\babel@aux{greek}{}
+\citation{alan._2016}
+\citation{Wang2016SlicSeg}
+\citation{shahedi2021placenta}
+\citation{haacke1999mri}
+\citation{mcrobbie2006mri}
+\citation{alan._2016}
+\citation{tustison2010n4itk}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Ιδιαιτερότητες τμηματοποίησης πλακούντα σε \foreignlanguage  {english}{MRI}}{29}{section.2.3}\protected@file@percent }
+\newlabel{sec:placenta_specifics}{{2.3}{29}{Ιδιαιτερότητες τμηματοποίησης πλακούντα σε \en {MRI}}{section.2.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Μαγνητική Τομογραφία \foreignlanguage  {english}{MRI}}{29}{section.2.4}\protected@file@percent }
+\newlabel{sec:mri_basics}{{2.4}{29}{Μαγνητική Τομογραφία \en {MRI}}{section.2.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Ανομοιογένεια έντασης και διόρθωση \foreignlanguage  {english}{bias field}}{29}{subsection.2.4.1}\protected@file@percent }
+\newlabel{subsec:bias}{{2.4.1}{29}{Ανομοιογένεια έντασης και διόρθωση \en {bias field}}{subsection.2.4.1}{}}
+\babel@aux{greek}{}
+\babel@aux{greek}{}
+\babel@aux{greek}{}
+\babel@aux{greek}{}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Αριστερά: ενδεικτική δισδιάστατη τομή (\foreignlanguage  {english}{slice}) \foreignlanguage  {english}{MRI} με την επισήμανση (πράσινο) του πλακούντα. Δεξιά: τρισδιάστατη αναπαράσταση της αντίστοιχης μάσκας τμηματοποίησης (πράσινο) και της θέσης της τομής στον όγκο.}}{30}{figure.caption.10}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{figure2.1}{{2.1}{30}{Αριστερά: ενδεικτική δισδιάστατη τομή (\en {slice}) \en {MRI} με την επισήμανση (πράσινο) του πλακούντα. Δεξιά: τρισδιάστατη αναπαράσταση της αντίστοιχης μάσκας τμηματοποίησης (πράσινο) και της θέσης της τομής στον όγκο}{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Συνήθη βήματα προεπεξεργασίας για τμηματοποίηση \foreignlanguage  {english}{MRI}}{30}{section.2.5}\protected@file@percent }
+\newlabel{sec:preprocess}{{2.5}{30}{Συνήθη βήματα προεπεξεργασίας για τμηματοποίηση \en {MRI}}{section.2.5}{}}
+\babel@aux{greek}{}
+\babel@aux{greek}{}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Μετρικές αξιολόγησης τμηματοποίησης}{31}{section.2.6}\protected@file@percent }
+\newlabel{sec:metrics}{{2.6}{31}{Μετρικές αξιολόγησης τμηματοποίησης}{section.2.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.1}Συντελεστής \foreignlanguage  {english}{Dice} (\foreignlanguage  {english}{DSC})}{31}{subsection.2.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.2}\foreignlanguage  {english}{Intersection over Union} (\foreignlanguage  {english}{IoU}/\foreignlanguage  {english}{Jaccard})}{31}{subsection.2.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.7}Σύνοψη}{31}{section.2.7}\protected@file@percent }
+\newlabel{sec:ch2_summary}{{2.7}{31}{Σύνοψη}{section.2.7}{}}
 \babel@aux{greek}{}
 \babel@aux{greek}{}
 \@setckpt{body_matter/chap2}{
-\setcounter{page}{24}
-\setcounter{equation}{0}
+\setcounter{page}{32}
+\setcounter{equation}{2}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
@@ -29,12 +69,12 @@
 \setcounter{mpfootnote}{0}
 \setcounter{part}{1}
 \setcounter{chapter}{2}
-\setcounter{section}{3}
-\setcounter{subsection}{1}
+\setcounter{section}{7}
+\setcounter{subsection}{0}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{0}
+\setcounter{figure}{1}
 \setcounter{table}{0}
 \setcounter{illustration}{0}
 \setcounter{parentequation}{0}
@@ -62,7 +102,7 @@
 \setcounter{remark}{0}
 \setcounter{notation}{0}
 \setcounter{law}{0}
-\setcounter{caption@flags}{0}
+\setcounter{caption@flags}{2}
 \setcounter{continuedfloat}{0}
 \setcounter{DefaultLines}{2}
 \setcounter{DefaultDepth}{0}

@@ -1,0 +1,5 @@
+u-net-architecture.png : https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/
+
+attention-module.webp: https://arxiv.org/pdf/1706.03762
+
+slices : patient55 along with its respective mask, done in 3D Slicer, the slice numbers are available on the screenshots

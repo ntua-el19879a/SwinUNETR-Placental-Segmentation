@@ -1,295 +1,452 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ΠΡΟΣΟΧΗ:
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Οι δηλώσεις των εγγραφών να γίνονται με πεζούς χαρακτήρες
-% π.χ. book και όχι BOOK
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-@article{DBLP:journals/vciba/JittouFR25,
-  author    = {Asmaa Jittou and
-               Khalid El Fazazy and
-               Jamal Riffi},
-  title     = {Placenta segmentation redefined: review of deep learning integration
-               of magnetic resonance imaging and ultrasound imaging},
-  journal   = {Vis. Comput. Ind. Biomed. Art},
-  volume    = {8},
-  number    = {1},
-  pages     = {17},
-  year      = {2025},
-  url       = {https://doi.org/10.1186/s42492-025-00197-8},
-  doi       = {10.1186/S42492-025-00197-8},
-  timestamp = {Tue, 05 Aug 2025 22:51:40 +0200},
-  biburl    = {https://dblp.org/rec/journals/vciba/JittouFR25.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
-}
-
-@article{Oppenheimer2018MagneticRI,
-  title   = {Magnetic resonance imaging of the placenta and gravid uterus: a pictorial essay},
-  author  = {Daniel C Oppenheimer and Parisa Mazaheri and David H. Ballard and Motoyo Yano and Kathryn J Fowler},
-  journal = {Abdominal Radiology},
-  year    = {2018},
-  volume  = {44},
-  pages   = {669-684},
-  url     = {https://api.semanticscholar.org/CorpusID:52177999}
-}
-@article{ZIMMER2023102639,
-  title    = {Placenta segmentation in ultrasound imaging: Addressing sources of uncertainty and limited field-of-view},
-  journal  = {Medical Image Analysis},
-  volume   = {83},
-  pages    = {102639},
-  year     = {2023},
-  issn     = {1361-8415},
-  doi      = {https://doi.org/10.1016/j.media.2022.102639},
-  url      = {https://www.sciencedirect.com/science/article/pii/S1361841522002675},
-  author   = {Veronika A. Zimmer and Alberto Gomez and Emily Skelton and Robert Wright and Gavin Wheeler and Shujie Deng and Nooshin Ghavami and Karen Lloyd and Jacqueline Matthew and Bernhard Kainz and Daniel Rueckert and Joseph V. Hajnal and Julia A. Schnabel},
-  keywords = {Ultrasound placenta segmentation, Multi-task learning, Multi-view imaging, Uncertainty/variability}
-}
-
-@inproceedings{vaswani2017attention,
-  title     = {Attention Is All You Need},
-  author    = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, Lukasz and Polosukhin, Illia},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
-  year      = {2017}
-}
-
-@misc{vaswani2023attentionneed,
-  title         = {Attention Is All You Need},
-  author        = {Ashish Vaswani and Noam Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones and Aidan N. Gomez and Lukasz Kaiser and Illia Polosukhin},
-  year          = {2023},
-  eprint        = {1706.03762},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.CL},
-  url           = {https://arxiv.org/abs/1706.03762}
-}
-
-@inproceedings{hatamizadeh2022unetr,
-  title     = {UNETR: Transformers for 3D Medical Image Segmentation},
-  author    = {Hatamizadeh, Ali and Tang, Yucheng and Nath, Vishwesh and Yang, Dong and Myronenko, Andriy and Roth, Holger R. and Xu, Daguang},
-  booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
-  year      = {2022}
-}
-
-@article{Litjens_2017,
-  title     = {A survey on deep learning in medical image analysis},
-  volume    = {42},
-  issn      = {1361-8415},
-  url       = {http://dx.doi.org/10.1016/j.media.2017.07.005},
-  doi       = {10.1016/j.media.2017.07.005},
-  journal   = {Medical Image Analysis},
-  publisher = {Elsevier BV},
-  author    = {Litjens, Geert and Kooi, Thijs and Bejnordi, Babak Ehteshami and Setio, Arnaud Arindra Adiyoso and Ciompi, Francesco and Ghafoorian, Mohsen and van der Laak, Jeroen A.W.M. and van Ginneken, Bram and Sánchez, Clara I.},
-  year      = {2017},
-  month     = dec,
-  pages     = {60–88}
-}
-
-@article{ronneberger2015unetconvolutionalnetworksbiomedical,
-  title         = {U-Net: Convolutional Networks for Biomedical Image Segmentation},
-  author        = {Olaf Ronneberger and Philipp Fischer and Thomas Brox},
-  year          = {2015},
-  eprint        = {1505.04597},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.CV},
-  url           = {https://arxiv.org/abs/1505.04597}
-}
-
-@inproceedings{Alansary2016PlacentaMotionMRI,
-  title     = {Fast Fully Automatic Segmentation of the Human Placenta from Motion Corrupted MRI},
-  author    = {Alansary, Amir and Kamnitsas, Konstantinos and Davidson, Alice and Khlebnikov, Rostislav and Rajchl, Martin and Malamateniou, Christina and Rutherford, Mary and Hajnal, Joseph V. and Glocker, Ben and Rueckert, Daniel and Kainz, Bernhard},
-  booktitle = {Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2016},
-  series    = {Lecture Notes in Computer Science},
-  volume    = {9901},
-  pages     = {589--597},
-  year      = {2016},
+@inproceedings{ronneberger2015unet,
+  author    = {Ronneberger, Olaf and Fischer, Philipp and Brox, Thomas},
+  booktitle = {Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2015},
+  doi       = {10.1007/978-3-319-24574-4_28},
+  pages     = {234--241},
   publisher = {Springer},
-  doi       = {10.1007/978-3-319-46723-8_68}
+  series    = {Lecture Notes in Computer Science},
+  title     = {U-Net: Convolutional Networks for Biomedical Image Segmentation},
+  url       = {https://arxiv.org/abs/1505.04597},
+  volume    = {9351},
+  year      = {2015}
 }
 
-
-@article{Wang2016SlicSeg,
-  title   = {Slic-Seg: A minimally interactive segmentation of the placenta from sparse and motion-corrupted fetal MRI in multiple views},
-  author  = {Wang, Guotai and Zuluaga, Maria A. and Pratt, Rosalind and Aertsen, Michael and Doel, Tom and Klusmann, Maria and David, Anna L. and Deprest, Jan and Vercauteren, Tom and Ourselin, S{\'e}bastien},
+@article{litjens2017survey,
+  author  = {Litjens, Geert and Kooi, Thijs and Bejnordi, Babak Ehteshami and Setio, Arnaud Arindra Adiyoso and Ciompi, Francesco and Ghafoorian, Mohsen and van der Laak, Jeroen A. W. M. and van Ginneken, Bram and S{\'a}nchez, Clara I.},
+  doi     = {10.1016/j.media.2017.07.005},
   journal = {Medical Image Analysis},
-  volume  = {34},
-  pages   = {137--147},
-  year    = {2016},
-  doi     = {10.1016/j.media.2016.04.009}
+  pages   = {60--88},
+  title   = {A survey on deep learning in medical image analysis},
+  url     = {https://doi.org/10.1016/j.media.2017.07.005},
+  volume  = {42},
+  year    = {2017}
 }
 
-@article{Pietsch2021APPLAUSE,
-  title   = {APPLAUSE: Automatic Prediction of PLAcental health via U-net Segmentation and statistical Evaluation},
-  author  = {Pietsch, Maximilian and Ho, Andrew and Bardanzellu, Alice and Zeidan, A. M. A. and Chappell, Lucy C. and Hajnal, Joseph V. and Rutherford, Mary and Hutter, Jana},
-  journal = {Medical Image Analysis},
-  volume  = {72},
-  pages   = {102145},
-  year    = {2021},
-  doi     = {10.1016/j.media.2021.102145}
+@article{alan._2016,
+  author    = {Alansary, A and Kamnitsas, K and Davidson, A and Khlebnikov, R and Rajchl, M and Malamateniou, C and Rutherford, M and Hajnal, JV and Glocker, B and Rueckert, D and et al.},
+  month     = {Oct},
+  publisher = {Springer Verlag},
+  title     = {Fast Fully Automatic Segmentation of the Human Placenta from Motion Corrupted MRI},
+  url       = {http://hdl.handle.net/10044/1/33768},
+  year      = {2016}
+}
+@article{10.1242/dev.163428,
+  author  = {Turco, Margherita Y. and Moffett, Ashley},
+  doi     = {10.1242/dev.163428},
+  eprint  = {https://journals.biologists.com/dev/article-pdf/146/22/dev163428/1968809/dev163428.pdf},
+  issn    = {0950-1991},
+  journal = {Development},
+  month   = {11},
+  number  = {22},
+  pages   = {dev163428},
+  title   = {Development of the human placenta},
+  url     = {https://doi.org/10.1242/dev.163428},
+  volume  = {146},
+  year    = {2019}
 }
 
-@inproceedings{Huang2023DLPlacentaSPIE,
-  title     = {Deep learning based automatic segmentation of the placenta and uterine cavity on prenatal {MR} images},
-  author    = {Huang, James and Do, Quyen N. and Shahedi, Maysam and Xi, Yin and Lewis, Matthew A. and Herrera, Christina L. and Owen, David and Spong, Catherine Y. and Madhuranthakam, Ananth J. and Twickler, Diane M. and Fei, Baowei},
-  booktitle = {Proceedings of SPIE Medical Imaging},
-  volume    = {12465},
-  year      = {2023},
-  doi       = {10.1117/12.2653659}
+@article{burton2015placenta,
+  author  = {Burton, Graham J. and Jauniaux, Eric},
+  doi     = {10.1016/j.ajog.2015.07.050},
+  journal = {American Journal of Obstetrics and Gynecology},
+  title   = {What is the placenta? A guide for clinicians},
+  year    = {2015}
 }
 
-@article{Tustison2010N4ITK,
-  title   = {N4ITK: Improved N3 Bias Correction},
+@article{burton2015multifaceted,
+  author  = {Burton, Graham J. and Fowden, Abigail L.},
+  doi     = {10.1098/rstb.2014.0066},
+  journal = {Philosophical Transactions of the Royal Society B: Biological Sciences},
+  number  = {1663},
+  pages   = {20140066},
+  title   = {The placenta: a multifaceted, transient organ},
+  volume  = {370},
+  year    = {2015}
+}
+
+@article{shahedi2021placenta,
+  author  = {Shahedi, Maysam and Spong, Catherine Y. and Dormer, James D. and Do, Quyen N. and Xi, Yin and Lewis, Matthew A. and Herrera, Christina and Madhuranthakam, Ananth J. and Twickler, Diane M. and Fei, Baowei},
+  doi     = {10.1117/1.JMI.8.5.054001},
+  journal = {Journal of Medical Imaging},
+  number  = {5},
+  pages   = {054001},
+  title   = {Deep learning-based segmentation of the placenta and uterus on {MR} images},
+  url     = {https://doi.org/10.1117/1.JMI.8.5.054001},
+  volume  = {8},
+  year    = {2021}
+}
+
+@article{tustison2010n4itk,
   author  = {Tustison, Nicholas J. and Avants, Brian B. and Cook, Philip A. and Zheng, Yuanjie and Egan, Alexander and Yushkevich, Paul A. and Gee, James C.},
+  doi     = {10.1109/TMI.2010.2046908},
   journal = {IEEE Transactions on Medical Imaging},
-  volume  = {29},
   number  = {6},
   pages   = {1310--1320},
-  year    = {2010},
-  doi     = {10.1109/TMI.2010.2046908}
+  title   = {N4ITK: Improved N3 Bias Correction},
+  url     = {https://doi.org/10.1109/TMI.2010.2046908},
+  volume  = {29},
+  year    = {2010}
 }
 
-@incollection{hatamizadeh2022swinunetr,
-  title     = {Swin UNETR: Swin Transformers for Semantic Segmentation of Brain Tumors in MRI Images},
-  author    = {Hatamizadeh, Ali and Nath, Vishwesh and Tang, Yucheng and Yang, Dong and Roth, Holger R. and Xu, Daguang},
-  booktitle = {Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries (BrainLes 2021)},
-  series    = {Lecture Notes in Computer Science},
-  volume    = {12962},
-  pages     = {272--284},
-  year      = {2022},
-  doi       = {10.1007/978-3-031-08999-2_22}
-}
-
-@article{chen2021transunet,
-  title   = {TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation},
-  author  = {Chen, Jieneng and Lu, Yongyi and Yu, Qihang and Luo, Xiangde and Adeli, Ehsan and Wang, Yan and Lu, Le and Yuille, Alan L. and Zhou, Yuyin},
-  journal = {arXiv preprint arXiv:2102.04306},
-  year    = {2021},
-  doi     = {10.48550/arXiv.2102.04306}
-}
-
-% Πτυχιακές Εργασίες
-
-% Διπλωματικές Εργασίες
-% Μεταπτυχιακές Διπλωματικές Εργασίες
-
-
-% Διδακτορικές Διατριβές
-
-
-% Τεχνικές Αναφορές
-
-% Διπλώματα Ευρεσιτεχνίας (πατέντες)
-
-
-@article{torrentsbarrena2019fetalreview,
-  title   = {Segmentation and classification in {MRI} and {US} fetal imaging: Recent trends and future prospects},
-  author  = {Torrents-Barrena, Jordina and Piella, Gemma and Masoller, Narc{\'i}s and Gratac{\'o}s, Eduard and Eixarch, Elisenda and Ceresa, Mario and Gonz{\'a}lez Ballester, Miguel {\'A}ngel},
-  journal = {Medical Image Analysis},
-  volume  = {51},
-  pages   = {61--88},
-  year    = {2019},
-  doi     = {10.1016/j.media.2018.10.003}
-}
-
-@article{fetalMRIwhatsnew2023,
-  title   = {Fetal {MRI}: what{'}s new? A short review},
-  author  = {Pellegrino, Marco and others},
-  journal = {Insights into Imaging},
-  year    = {2023},
-  doi     = {10.1186/s41747-023-00358-5}
-}
-
-@inproceedings{long2015fcn,
-  title     = {Fully Convolutional Networks for Semantic Segmentation},
-  author    = {Long, Jonathan and Shelhamer, Evan and Darrell, Trevor},
-  booktitle = {Proceedings of the {IEEE} Conference on Computer Vision and Pattern Recognition ({CVPR})},
-  pages     = {3431--3440},
-  year      = {2015},
-  doi       = {10.1109/CVPR.2015.7298965}
-}
-
-@inproceedings{cicek20163dunet,
-  title     = {3D {U-Net}: Learning Dense Volumetric Segmentation from Sparse Annotation},
-  author    = {{\c{C}}i{\c{c}}ek, {\"O}zg{\"u}n and Abdulkadir, Ahmed and Lienkamp, Soeren S. and Brox, Thomas and Ronneberger, Olaf},
-  booktitle = {Medical Image Computing and Computer-Assisted Intervention -- {MICCAI} 2016},
-  series    = {Lecture Notes in Computer Science},
-  volume    = {9901},
-  pages     = {424--432},
-  year      = {2016},
-  publisher = {Springer},
-  doi       = {10.1007/978-3-319-46723-8_49}
-}
-
-@inproceedings{he2016resnet,
-  title     = {Deep Residual Learning for Image Recognition},
-  author    = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
-  booktitle = {Proceedings of the {IEEE} Conference on Computer Vision and Pattern Recognition ({CVPR})},
-  pages     = {770--778},
-  year      = {2016},
-  doi       = {10.1109/CVPR.2016.90}
-}
-
-@article{lecun1998gradient,
-  title   = {Gradient-Based Learning Applied to Document Recognition},
-  author  = {LeCun, Yann and Bottou, L{\'e}on and Bengio, Yoshua and Haffner, Patrick},
-  journal = {Proceedings of the {IEEE}},
-  volume  = {86},
-  number  = {11},
-  pages   = {2278--2324},
-  year    = {1998},
-  doi     = {10.1109/5.726791}
+@misc{cardoso2022monai,
+  archiveprefix = {arXiv},
+  author        = {Cardoso, M. Jorge and Li, Wenqi and Brown, Richard and Ma, Nic and Kerfoot, Eric and Wang, Yiheng and Murray, Benjamin and Myronenko, Andriy and Zhao, Can and Yang, Dong and others},
+  doi           = {10.48550/arXiv.2211.02701},
+  eprint        = {2211.02701},
+  howpublished  = {arXiv preprint},
+  primaryclass  = {eess.IV},
+  title         = {{MONAI}: An open-source framework for deep learning in healthcare},
+  url           = {https://arxiv.org/abs/2211.02701},
+  year          = {2022}
 }
 
 @article{isensee2021nnunet,
-  title   = {nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation},
   author  = {Isensee, Fabian and Jaeger, Paul F. and Kohl, Simon A. A. and Petersen, Jens and Maier-Hein, Klaus H.},
+  doi     = {10.1038/s41592-020-01008-z},
   journal = {Nature Methods},
-  volume  = {18},
   number  = {2},
   pages   = {203--211},
-  year    = {2021},
-  doi     = {10.1038/s41592-020-01008-z}
+  title   = {nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation},
+  url     = {https://doi.org/10.1038/s41592-020-01008-z},
+  volume  = {18},
+  year    = {2021}
 }
 
-@article{myronenko2018autoencoder,
-  title         = {3D {MRI} brain tumor segmentation using autoencoder regularization},
+@misc{myronenko2018segresnet,
+  archiveprefix = {arXiv},
   author        = {Myronenko, Andriy},
-  year          = {2018},
+  doi           = {10.48550/arXiv.1810.11654},
   eprint        = {1810.11654},
-  archiveprefix = {arXiv},
+  howpublished  = {arXiv preprint},
   primaryclass  = {cs.CV},
-  url           = {https://arxiv.org/abs/1810.11654}
+  title         = {3D {MRI} brain tumor segmentation using autoencoder regularization},
+  url           = {https://arxiv.org/abs/1810.11654},
+  year          = {2018}
 }
 
-@inproceedings{dosovitskiy2021vit,
-  title     = {An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale},
-  author    = {Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov, Alexander and Weissenborn, Dirk and Zhai, Xiaohua and Unterthiner, Thomas and Dehghani, Mostafa and Minderer, Matthias and Heigold, Georg and Gelly, Sylvain and Uszkoreit, Jakob and Houlsby, Neil},
-  booktitle = {International Conference on Learning Representations ({ICLR})},
-  year      = {2021},
-  url       = {https://openreview.net/forum?id=YicbFdNTTy}
+@misc{oktay2018attentionunet,
+  archiveprefix = {arXiv},
+  author        = {Oktay, Ozan and Schlemper, Jo and Le Folgoc, Loic and Lee, Matthew and Heinrich, Mattias and Misawa, Kazunari and Mori, Kensaku and McDonagh, Steven and Hammerla, Nils Y. and Kainz, Bernhard and Glocker, Ben and Rueckert, Daniel},
+  doi           = {10.48550/arXiv.1804.03999},
+  eprint        = {1804.03999},
+  howpublished  = {arXiv preprint},
+  primaryclass  = {cs.CV},
+  title         = {Attention {U-Net}: Learning Where to Look for the Pancreas},
+  url           = {https://arxiv.org/abs/1804.03999},
+  year          = {2018}
 }
 
-@inproceedings{liu2021swin,
-  title     = {Swin Transformer: Hierarchical Vision Transformer using Shifted Windows},
-  author    = {Liu, Ze and Lin, Yutong and Cao, Yue and Hu, Han and Wei, Yixuan and Zhang, Zheng and Lin, Stephen and Guo, Baining},
-  booktitle = {Proceedings of the {IEEE/CVF} International Conference on Computer Vision ({ICCV})},
-  year      = {2021},
-  url       = {https://openaccess.thecvf.com/content/ICCV2021/papers/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper.pdf}
+@inproceedings{hatamizadeh2022unetr,
+  author    = {Hatamizadeh, Ali and Tang, Yucheng and Nath, Vishwesh and Yang, Dong and Myronenko, Andriy and Roth, Holger R. and Xu, Daguang},
+  booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  doi       = {10.1109/WACV51458.2022.00181},
+  pages     = {574--584},
+  title     = {{UNETR}: Transformers for 3D Medical Image Segmentation},
+  year      = {2022}
 }
 
-@article{gu2023mamba,
-  title         = {Mamba: Linear-Time Sequence Modeling with Selective State Spaces},
-  author        = {Gu, Albert and Dao, Tri},
-  year          = {2023},
+@incollection{hatamizadeh2022swinunetr,
+  author    = {Hatamizadeh, Ali and Nath, Vishwesh and Tang, Yucheng and Yang, Dong and Roth, Holger R. and Xu, Daguang},
+  booktitle = {Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries (BrainLes 2021)},
+  doi       = {10.1007/978-3-031-08999-2_22},
+  pages     = {272--284},
+  publisher = {Springer},
+  series    = {Lecture Notes in Computer Science},
+  title     = {Swin {UNETR}: Swin Transformers for Semantic Segmentation of Brain Tumors in {MRI} Images},
+  url       = {https://doi.org/10.1007/978-3-031-08999-2_22},
+  volume    = {12962},
+  year      = {2022}
+}
+
+@misc{vaswani2017attention,
+  archiveprefix = {arXiv},
+  author        = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, Lukasz and Polosukhin, Illia},
+  doi           = {10.48550/arXiv.1706.03762},
+  eprint        = {1706.03762},
+  howpublished  = {arXiv preprint},
+  primaryclass  = {cs.CL},
+  title         = {Attention Is All You Need},
+  url           = {https://arxiv.org/abs/1706.03762},
+  year          = {2017}
+}
+
+@misc{dosovitskiy2021vit,
+  archiveprefix = {arXiv},
+  author        = {Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov, Alexander and Weissenborn, Dirk and Zhai, Xiaohua and Unterthiner, Thomas and Dehghani, Mostafa and Minderer, Matthias and Heigold, Georg and Gelly, Sylvain and Uszkoreit, Jakob and Houlsby, Neil},
+  doi           = {10.48550/arXiv.2010.11929},
+  eprint        = {2010.11929},
+  howpublished  = {arXiv preprint},
+  primaryclass  = {cs.CV},
+  title         = {An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale},
+  url           = {https://arxiv.org/abs/2010.11929},
+  year          = {2021}
+}
+
+@misc{liu2021swin,
+  archiveprefix = {arXiv},
+  author        = {Liu, Ze and Lin, Yutong and Cao, Yue and Hu, Han and Wei, Yixuan and Zhang, Zheng and Lin, Stephen and Guo, Baining},
+  doi           = {10.48550/arXiv.2103.14030},
+  eprint        = {2103.14030},
+  howpublished  = {arXiv preprint},
+  primaryclass  = {cs.CV},
+  title         = {Swin Transformer: Hierarchical Vision Transformer using Shifted Windows},
+  url           = {https://arxiv.org/abs/2103.14030},
+  year          = {2021}
+}
+
+@misc{gu2023mamba,
+  archiveprefix = {arXiv},
+  author        = {Gu, Albert and Dao, Tri and others},
+  doi           = {10.48550/arXiv.2312.00752},
   eprint        = {2312.00752},
-  archiveprefix = {arXiv},
+  howpublished  = {arXiv preprint},
   primaryclass  = {cs.LG},
-  url           = {https://arxiv.org/abs/2312.00752}
-}
-@misc{xing2024segmambalongrangesequentialmodeling,
-  title         = {SegMamba: Long-range Sequential Modeling Mamba For 3D Medical Image Segmentation},
-  author        = {Zhaohu Xing and Tian Ye and Yijun Yang and Guang Liu and Lei Zhu},
-  year          = {2024},
-  eprint        = {2401.13560},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.CV},
-  url           = {https://arxiv.org/abs/2401.13560}
+  title         = {Mamba: Linear-Time Sequence Modeling with Selective State Spaces},
+  url           = {https://arxiv.org/abs/2312.00752},
+  year          = {2023}
 }
 
+@inproceedings{xing2024segmamba,
+  author    = {Xing, Zhaohu and Ye, Tian and Yang, Yijun and Liu, Guang and Zhu, Lei},
+  booktitle = {Medical Image Computing and Computer Assisted Intervention -- MICCAI 2024},
+  doi       = {10.1007/978-3-031-72111-3_54},
+  pages     = {578--588},
+  publisher = {Springer},
+  series    = {Lecture Notes in Computer Science},
+  title     = {SegMamba: Long-range Sequential Modeling Mamba For 3D Medical Image Segmentation},
+  url       = {https://doi.org/10.1007/978-3-031-72111-3_54},
+  volume    = {15008},
+  year      = {2024}
+}
+
+@misc{milletari2016vnet,
+  archiveprefix = {arXiv},
+  author        = {Milletari, Fausto and Navab, Nassir and Ahmadi, Seyed-Ahmad},
+  doi           = {10.48550/arXiv.1606.04797},
+  eprint        = {1606.04797},
+  howpublished  = {arXiv preprint},
+  primaryclass  = {cs.CV},
+  title         = {V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation},
+  url           = {https://arxiv.org/abs/1606.04797},
+  year          = {2016}
+}
+
+@article{lecun1998gradient,
+  author  = {LeCun, Yann and Bottou, L{\'e}on and Bengio, Yoshua and Haffner, Patrick},
+  doi     = {10.1109/5.726791},
+  journal = {Proceedings of the IEEE},
+  number  = {11},
+  pages   = {2278--2324},
+  title   = {Gradient-Based Learning Applied to Document Recognition},
+  url     = {https://doi.org/10.1109/5.726791},
+  volume  = {86},
+  year    = {1998}
+}
+
+@inproceedings{krizhevsky2012imagenet,
+  author    = {Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E.},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  title     = {ImageNet Classification with Deep Convolutional Neural Networks},
+  url       = {https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html},
+  year      = {2012}
+}
+
+@inproceedings{he2016resnet,
+  author    = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  doi       = {10.1109/CVPR.2016.90},
+  pages     = {770--778},
+  title     = {Deep Residual Learning for Image Recognition},
+  url       = {https://doi.org/10.1109/CVPR.2016.90},
+  year      = {2016}
+}
+
+@book{goodfellow2016deep,
+  author    = {Goodfellow, Ian and Bengio, Yoshua and Courville, Aaron},
+  publisher = {MIT Press},
+  title     = {Deep Learning},
+  url       = {https://www.deeplearningbook.org/},
+  year      = {2016}
+}
+
+@book{bishop2006pattern,
+  author    = {Bishop, Christopher M.},
+  isbn      = {978-0-387-31073-2},
+  publisher = {Springer},
+  title     = {Pattern Recognition and Machine Learning},
+  year      = {2006}
+}
+
+@misc{loshchilov2019adamw,
+  archiveprefix = {arXiv},
+  author        = {Loshchilov, Ilya and Hutter, Frank},
+  doi           = {10.48550/arXiv.1711.05101},
+  eprint        = {1711.05101},
+  howpublished  = {arXiv preprint},
+  primaryclass  = {cs.LG},
+  title         = {Decoupled Weight Decay Regularization},
+  url           = {https://arxiv.org/abs/1711.05101},
+  year          = {2019}
+}
+
+@book{haacke1999mri,
+  author    = {Haacke, E. Mark and Brown, Robert W. and Thompson, Michael R. and Venkatesan, Ramesh},
+  isbn      = {978-0-471-35128-3},
+  publisher = {Wiley-Liss},
+  title     = {Magnetic Resonance Imaging: Physical Principles and Sequence Design},
+  year      = {1999}
+}
+
+@book{mcrobbie2006mri,
+  author    = {McRobbie, Donald W. and Moore, Elizabeth A. and Graves, Martin J. and Prince, Martin R.},
+  edition   = {2},
+  publisher = {Cambridge University Press},
+  title     = {MRI from Picture to Proton},
+  year      = {2006}
+}
+
+@article{oppenheimer2019placenta_mri,
+  author  = {Oppenheimer, Daniel C. and Mazaheri, Parisa and Ballard, David H. and Yano, Motoyo and Fowler, Kathryn J. and others},
+  doi     = {10.1007/s00261-018-1755-1},
+  journal = {Abdominal Radiology},
+  pages   = {669--684},
+  title   = {Magnetic resonance imaging of the placenta and gravid uterus: a pictorial essay},
+  url     = {https://doi.org/10.1007/s00261-018-1755-1},
+  volume  = {44},
+  year    = {2019}
+}
+
+@article{maltepe2015forgotten,
+  author  = {Maltepe, Emin and Fisher, Susan J.},
+  doi     = {10.1146/annurev-cellbio-100814-125620},
+  journal = {Annual Review of Cell and Developmental Biology},
+  pages   = {523--552},
+  title   = {Placenta: the forgotten organ},
+  volume  = {31},
+  year    = {2015}
+}
+@article{gude2004growth,
+  author  = {Gude, Naveen M. and Roberts, Clare T. and Kalionis, Bill and King, Roger G.},
+  doi     = {10.1016/j.thromres.2004.06.038},
+  journal = {Thrombosis Research},
+  number  = {5-6},
+  pages   = {397--407},
+  title   = {Growth and function of the normal human placenta},
+  volume  = {114},
+  year    = {2004}
+}
+
+
+@article{maltepe2010placenta,
+  author  = {Maltepe, Emin and Bakardjiev, Anna I. and Fisher, Susan J.},
+  doi     = {10.1172/JCI41211},
+  journal = {The Journal of Clinical Investigation},
+  number  = {4},
+  pages   = {1016--1025},
+  title   = {The placenta: transcriptional, epigenetic, and physiological integration during development},
+  volume  = {120},
+  year    = {2010}
+}
+
+@article{brosens2011deepplacentation,
+  author  = {Brosens, Ivo and Pijnenborg, Robert and Vercruysse, Liesbeth and Romero, Roberto},
+  doi     = {10.1016/j.ajog.2010.08.009},
+  journal = {American Journal of Obstetrics and Gynecology},
+  number  = {3},
+  pages   = {193--201},
+  title   = {The ``Great Obstetrical Syndromes'' are associated with disorders of deep placentation},
+  volume  = {204},
+  year    = {2011}
+}
+
+
+% --- CNN segmentation / 3D segmentation fundamentals ---
+@inproceedings{long2015fcn,
+  author    = {Long, Jonathan and Shelhamer, Evan and Darrell, Trevor},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  doi       = {10.1109/CVPR.2015.7298965},
+  pages     = {3431--3440},
+  title     = {Fully Convolutional Networks for Semantic Segmentation},
+  year      = {2015}
+}
+
+@inproceedings{cicek20163dunet,
+  author    = {Cicek, {\"O}zg{\"u}n and Abdulkadir, Ahmed and Lienkamp, Soeren S. and Brox, Thomas and Ronneberger, Olaf},
+  booktitle = {Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2016},
+  doi       = {10.1007/978-3-319-46723-8_49},
+  pages     = {424--432},
+  publisher = {Springer},
+  series    = {Lecture Notes in Computer Science},
+  title     = {3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation},
+  volume    = {9901},
+  year      = {2016}
+}
+
+@article{ioffe2015batchnorm,
+  archiveprefix = {arXiv},
+  author        = {Ioffe, Sergey and Szegedy, Christian},
+  eprint        = {1502.03167},
+  primaryclass  = {cs.LG},
+  title         = {Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift},
+  url           = {https://arxiv.org/abs/1502.03167},
+  year          = {2015}
+}
+
+@article{wu2018groupnorm,
+  archiveprefix = {arXiv},
+  author        = {Wu, Yuxin and He, Kaiming},
+  eprint        = {1803.08494},
+  primaryclass  = {cs.CV},
+  title         = {Group Normalization},
+  url           = {https://arxiv.org/abs/1803.08494},
+  year          = {2018}
+}
+
+
+@article{wang2020linformer,
+  archiveprefix = {arXiv},
+  author        = {Wang, Sinong and Li, Belinda Z. and Khabsa, Madian and Fang, Han and Ma, Hao},
+  eprint        = {2006.04768},
+  primaryclass  = {cs.LG},
+  title         = {Linformer: Self-Attention with Linear Complexity},
+  url           = {https://arxiv.org/abs/2006.04768},
+  year          = {2020}
+}
+
+@article{choromanski2021performer,
+  archiveprefix = {arXiv},
+  author        = {Choromanski, Krzysztof and others},
+  eprint        = {2009.14794},
+  primaryclass  = {cs.LG},
+  title         = {Rethinking Attention with Performers},
+  url           = {https://arxiv.org/abs/2009.14794},
+  year          = {2021}
+}
+
+% --- SSMs / S4 / Mamba ---
+@article{gu2021s4,
+  archiveprefix = {arXiv},
+  author        = {Gu, Albert and Goel, Karan and R{\'e}, Christopher},
+  eprint        = {2111.00396},
+  primaryclass  = {cs.LG},
+  title         = {Efficiently Modeling Long Sequences with Structured State Spaces},
+  url           = {https://arxiv.org/abs/2111.00396},
+  year          = {2021}
+}
+
+
+
+@article{Wang2016SlicSeg,
+  author   = {Guotai Wang and Maria A. Zuluaga and Rosalind Pratt and Michael Aertsen and Tom Doel and Maria Klusmann and Anna L. David and Jan Deprest and Tom Vercauteren and Sébastien Ourselin},
+  doi      = {https://doi.org/10.1016/j.media.2016.04.009},
+  issn     = {1361-8415},
+  journal  = {Medical Image Analysis},
+  keywords = {Fetal MRI, Interactive method, Co-segmentation, Graph Cuts, Random forests},
+  note     = {Special Issue on the 2015 Conference on Medical Image Computing and Computer Assisted Intervention},
+  pages    = {137-147},
+  title    = {Slic-Seg: A minimally interactive segmentation of the placenta from sparse and motion-corrupted fetal MRI in multiple views},
+  url      = {https://www.sciencedirect.com/science/article/pii/S1361841516300287},
+  volume   = {34},
+  year     = {2016}
+}

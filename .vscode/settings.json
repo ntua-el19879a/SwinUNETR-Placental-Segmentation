@@ -1,0 +1,13 @@
+{
+	// // Disable all inline suggestions
+	// "editor.inlineSuggest.enabled": true,
+	// // Or disable suggestions in general
+	// "editor.suggest.enabled": true,
+	// Or disable just for Python files
+	"[python]": {
+		"editor.inlineSuggest.enabled": false
+	},
+	"[latex]": {
+		"editor.inlineSuggest.enabled": false
+	}
+}

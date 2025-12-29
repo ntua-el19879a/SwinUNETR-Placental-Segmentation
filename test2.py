@@ -16,13 +16,12 @@ median = df['Age'].median()
 # df['Age'] = df['Age'].apply(lambda x: 0 if x < 0 else x)
 
 # one way of cleaning NaNs is dropping them entirely
+list1 = [("map1",2), ("map2",4), ("map3",6)]
 
-df_clean = df.dropna()
-df_clean_only = df.dropna(subset=["Department"])
-df_clean_all = df.dropna(how='all')
-df['Salary'] = df['Salary'].fillna(df['Salary'].median())
+dict1 = dict(list1)
+# print(dict1)
+datafr = pd.DataFrame([dict1])
+print(datafr)
 
 
 
-
-print(df)

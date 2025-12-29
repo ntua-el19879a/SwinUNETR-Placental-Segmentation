@@ -1,71 +1,194 @@
 \begin{thebibliography}{10}
 
-\bibitem{torrentsbarrena2019fetalreview}
-{{\latintext Jordina{ }Torrents-Barrena, Gemma{ }Piella, Narc{\'i}s{ }Masoller, Eduard{ }Gratac{\'o}s, Elisenda{ }Eixarch, Mario{ }Ceresa \textgreek{kai} Miguel {\'A}ngel{ }Gonz{\'a}lez~Ballester}}.
-\newblock {{\latintext {\color{\colouredtextcolor} {\em Segmentation and classification in {MRI} and {US} fetal imaging: Recent trends and future prospects}}}}.
-\newblock {{\latintext {\em Medical Image Analysis}}}, 51:61--88, 2019.
+\bibitem{alan._2016}
+{{\latintext A{ }Alansary, K{ }Kamnitsas, A{ }Davidson, R{ }Khlebnikov, M{ }Rajchl, C{ }Malamateniou, M{ }Rutherford, JV{ }Hajnal, B{ }Glocker, D{ }Rueckert \textgreek{kai} et{ }al.}}
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Fast Fully Automatic Segmentation of the Human Placenta from Motion Corrupted MRI}}}}.
+\newblock   2016.
 
-\bibitem{DBLP:journals/vciba/JittouFR25}
-{{\latintext Asmaa{ }Jittou, Khalid El{ }Fazazy \textgreek{kai} Jamal{ }Riffi}}.
-\newblock {{\latintext {\color{\colouredtextcolor} {\em Placenta segmentation redefined: review of deep learning integration of magnetic resonance imaging and ultrasound imaging}}}}.
-\newblock {{\latintext {\em Vis. Comput. Ind. Biomed. Art}}}, 8(1):17, 2025.
+\bibitem{Wang2016SlicSeg}
+{{\latintext Guotai{ }Wang, Maria A.{ }Zuluaga, Rosalind{ }Pratt, Michael{ }Aertsen, Tom{ }Doel, Maria{ }Klusmann, Anna L.{ }David, Jan{ }Deprest, Tom{ }Vercauteren \textgreek{kai} Sébastien{ }Ourselin}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Slic-Seg: A minimally interactive segmentation of the placenta from sparse and motion-corrupted fetal MRI in multiple views}}}}.
+\newblock {{\latintext {\em Medical Image Analysis}}}, 34:137--147, 2016.
+\newblock Special Issue on the 2015 Conference on Medical Image Computing and Computer Assisted Intervention.
 
-\bibitem{Litjens_2017}
-{{\latintext Geert{ }Litjens, Thijs{ }Kooi, Babak Ehteshami{ }Bejnordi, Arnaud Arindra Adiyoso{ }Setio, Francesco{ }Ciompi, Mohsen{ }Ghafoorian, Jeroen A.W.M.van der{ }Laak, Bramvan{ }Ginneken \textgreek{kai} Clara I.{ }Sánchez}}.
-\newblock {{\latintext {\color{\colouredtextcolor} {\em A survey on deep learning in medical image analysis}}}}.
-\newblock {{\latintext {\em Medical Image Analysis}}}, 42:60–88,   2017.
+\bibitem{shahedi2021placenta}
+{{\latintext Maysam{ }Shahedi, Catherine Y.{ }Spong, James D.{ }Dormer, Quyen N.{ }Do, Yin{ }Xi, Matthew A.{ }Lewis, Christina{ }Herrera, Ananth J.{ }Madhuranthakam, Diane M.{ }Twickler \textgreek{kai} Baowei{ }Fei}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Deep learning-based segmentation of the placenta and uterus on {MR} images}}}}.
+\newblock {{\latintext {\em Journal of Medical Imaging}}}, 8(5):054001, 2021.
 
-\bibitem{ronneberger2015unetconvolutionalnetworksbiomedical}
+\bibitem{ronneberger2015unet}
 {{\latintext Olaf{ }Ronneberger, Philipp{ }Fischer \textgreek{kai} Thomas{ }Brox}}.
-\newblock {{\latintext {\color{\colouredtextcolor} {\em U-Net: Convolutional Networks for Biomedical Image Segmentation}}}}.
-\newblock 2015.
-
-\bibitem{gu2023mamba}
-{{\latintext Albert{ }Gu \textgreek{kai} Tri{ }Dao}}.
-\newblock {{\latintext {\color{\colouredtextcolor} {\em Mamba: Linear-Time Sequence Modeling with Selective State Spaces}}}}.
-\newblock 2023.
-
-\bibitem{xing2024segmambalongrangesequentialmodeling}
-{{\latintext Zhaohu{ }Xing, Tian{ }Ye, Yijun{ }Yang, Guang{ }Liu \textgreek{kai} Lei{ }Zhu}}.
-\newblock {{\latintext {\color{\colouredtextcolor} {\em SegMamba: Long-range Sequential Modeling Mamba For 3D Medical Image Segmentation}}}}, 2024.
-
-\bibitem{Oppenheimer2018MagneticRI}
-{{\latintext Daniel C{ }Oppenheimer, Parisa{ }Mazaheri, David H.{ }Ballard, Motoyo{ }Yano \textgreek{kai} Kathryn J{ }Fowler}}.
-\newblock {{\latintext {\color{\colouredtextcolor} {\em Magnetic resonance imaging of the placenta and gravid uterus: a pictorial essay}}}}.
-\newblock {{\latintext {\em Abdominal Radiology}}}, 44:669--684, 2018.
-
-\bibitem{ZIMMER2023102639}
-{{\latintext Veronika A.{ }Zimmer, Alberto{ }Gomez, Emily{ }Skelton, Robert{ }Wright, Gavin{ }Wheeler, Shujie{ }Deng, Nooshin{ }Ghavami, Karen{ }Lloyd, Jacqueline{ }Matthew, Bernhard{ }Kainz, Daniel{ }Rueckert, Joseph V.{ }Hajnal \textgreek{kai} Julia A.{ }Schnabel}}.
-\newblock {{\latintext {\color{\colouredtextcolor} {\em Placenta segmentation in ultrasound imaging: Addressing sources of uncertainty and limited field-of-view}}}}.
-\newblock {{\latintext {\em Medical Image Analysis}}}, 83:102639, 2023.
-
-\bibitem{fetalMRIwhatsnew2023}
-{{\latintext Marco{ }Pellegrino \textgreek{kai} { }others}}.
-\newblock {{\latintext {\color{\colouredtextcolor} {\em Fetal {MRI}: what{'}s new? A short review}}}}.
-\newblock {{\latintext {\em Insights into Imaging}}}, 2023.
+\newblock {\color{\colouredtextcolor} {{\latintext {\em U-Net: Convolutional Networks for Biomedical Image Segmentation}}}}.
+\newblock {{\latintext  {\em Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2015}}}, \textgreek{t'omos} 9351 \textgreek{sto} {\em {{\latintext Lecture Notes in Computer Science}}}, \textgreek{sel'ides} 234--241. {{\latintext Springer}}, 2015.
 
 \bibitem{vaswani2017attention}
 {{\latintext Ashish{ }Vaswani, Noam{ }Shazeer, Niki{ }Parmar, Jakob{ }Uszkoreit, Llion{ }Jones, Aidan N.{ }Gomez, Lukasz{ }Kaiser \textgreek{kai} Illia{ }Polosukhin}}.
-\newblock {\color{\colouredtextcolor} {{\latintext {\em Attention Is All You Need}}}}.
-\newblock {{\latintext  {\em Advances in Neural Information Processing Systems (NeurIPS)}}}, 2017.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Attention Is All You Need}}}}.
+\newblock {{\latintext arXiv preprint}}, 2017.
 
 \bibitem{hatamizadeh2022unetr}
 {{\latintext Ali{ }Hatamizadeh, Yucheng{ }Tang, Vishwesh{ }Nath, Dong{ }Yang, Andriy{ }Myronenko, Holger R.{ }Roth \textgreek{kai} Daguang{ }Xu}}.
-\newblock {\color{\colouredtextcolor} {{\latintext {\em UNETR: Transformers for 3D Medical Image Segmentation}}}}.
-\newblock {{\latintext  {\em Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)}}}, 2022.
+\newblock {\color{\colouredtextcolor} {{\latintext {\em {UNETR}: Transformers for 3D Medical Image Segmentation}}}}.
+\newblock {{\latintext  {\em Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)}}}, \textgreek{sel'ides} 574--584, 2022.
 
 \bibitem{hatamizadeh2022swinunetr}
 {{\latintext Ali{ }Hatamizadeh, Vishwesh{ }Nath, Yucheng{ }Tang, Dong{ }Yang, Holger R.{ }Roth \textgreek{kai} Daguang{ }Xu}}.
-\newblock {\color{\colouredtextcolor} {{\latintext {\em Swin UNETR: Swin Transformers for Semantic Segmentation of Brain Tumors in MRI Images}}}}.
-\newblock {{\latintext  {\em Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries (BrainLes 2021)}}}, \textgreek{t'omos} 12962 \textgreek{sto} {\em {{\latintext Lecture Notes in Computer Science}}}, \textgreek{sel'ides} 272--284. 2022.
+\newblock {\color{\colouredtextcolor} {{\latintext {\em Swin {UNETR}: Swin Transformers for Semantic Segmentation of Brain Tumors in {MRI} Images}}}}.
+\newblock {{\latintext  {\em Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries (BrainLes 2021)}}}, \textgreek{t'omos} 12962 \textgreek{sto} {\em {{\latintext Lecture Notes in Computer Science}}}, \textgreek{sel'ides} 272--284. {{\latintext Springer}}, 2022.
 
-\bibitem{chen2021transunet}
-{{\latintext Jieneng{ }Chen, Yongyi{ }Lu, Qihang{ }Yu, Xiangde{ }Luo, Ehsan{ }Adeli, Yan{ }Wang, Le{ }Lu, Alan L.{ }Yuille \textgreek{kai} Yuyin{ }Zhou}}.
-\newblock {{\latintext {\color{\colouredtextcolor} {\em TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation}}}}.
-\newblock {{\latintext {\em arXiv preprint arXiv:2102.04306}}}, 2021.
+\bibitem{gu2023mamba}
+{{\latintext Albert{ }Gu, Tri{ }Dao \textgreek{kai} { }others}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Mamba: Linear-Time Sequence Modeling with Selective State Spaces}}}}.
+\newblock {{\latintext arXiv preprint}}, 2023.
 
-\bibitem{vaswani2023attentionneed}
-{{\latintext Ashish{ }Vaswani, Noam{ }Shazeer, Niki{ }Parmar, Jakob{ }Uszkoreit, Llion{ }Jones, Aidan N.{ }Gomez, Lukasz{ }Kaiser \textgreek{kai} Illia{ }Polosukhin}}.
-\newblock {{\latintext {\color{\colouredtextcolor} {\em Attention Is All You Need}}}}, 2023.
+\bibitem{xing2024segmamba}
+{{\latintext Zhaohu{ }Xing, Tian{ }Ye, Yijun{ }Yang, Guang{ }Liu \textgreek{kai} Lei{ }Zhu}}.
+\newblock {\color{\colouredtextcolor} {{\latintext {\em SegMamba: Long-range Sequential Modeling Mamba For 3D Medical Image Segmentation}}}}.
+\newblock {{\latintext  {\em Medical Image Computing and Computer Assisted Intervention -- MICCAI 2024}}}, \textgreek{t'omos} 15008 \textgreek{sto} {\em {{\latintext Lecture Notes in Computer Science}}}, \textgreek{sel'ides} 578--588. {{\latintext Springer}}, 2024.
+
+\bibitem{cardoso2022monai}
+{{\latintext M. Jorge{ }Cardoso, Wenqi{ }Li, Richard{ }Brown, Nic{ }Ma, Eric{ }Kerfoot, Yiheng{ }Wang, Benjamin{ }Murray, Andriy{ }Myronenko, Can{ }Zhao, Dong{ }Yang \textgreek{kai} { }others}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em {MONAI}: An open-source framework for deep learning in healthcare}}}}.
+\newblock {{\latintext arXiv preprint}}, 2022.
+
+\bibitem{myronenko2018segresnet}
+{{\latintext Andriy{ }Myronenko}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em 3D {MRI} brain tumor segmentation using autoencoder regularization}}}}.
+\newblock {{\latintext arXiv preprint}}, 2018.
+
+\bibitem{oktay2018attentionunet}
+{{\latintext Ozan{ }Oktay, Jo{ }Schlemper, Loic{ }Le~Folgoc, Matthew{ }Lee, Mattias{ }Heinrich, Kazunari{ }Misawa, Kensaku{ }Mori, Steven{ }McDonagh, Nils Y.{ }Hammerla, Bernhard{ }Kainz, Ben{ }Glocker \textgreek{kai} Daniel{ }Rueckert}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Attention {U-Net}: Learning Where to Look for the Pancreas}}}}.
+\newblock {{\latintext arXiv preprint}}, 2018.
+
+\bibitem{burton2015placenta}
+{{\latintext Graham J.{ }Burton \textgreek{kai} Eric{ }Jauniaux}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em What is the placenta? A guide for clinicians}}}}.
+\newblock {{\latintext {\em American Journal of Obstetrics and Gynecology}}}, 2015.
+
+\bibitem{maltepe2015forgotten}
+{{\latintext Emin{ }Maltepe \textgreek{kai} Susan J.{ }Fisher}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Placenta: the forgotten organ}}}}.
+\newblock {{\latintext {\em Annual Review of Cell and Developmental Biology}}}, 31:523--552, 2015.
+
+\bibitem{gude2004growth}
+{{\latintext Naveen M.{ }Gude, Clare T.{ }Roberts, Bill{ }Kalionis \textgreek{kai} Roger G.{ }King}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Growth and function of the normal human placenta}}}}.
+\newblock {{\latintext {\em Thrombosis Research}}}, 114(5-6):397--407, 2004.
+
+\bibitem{brosens2011deepplacentation}
+{{\latintext Ivo{ }Brosens, Robert{ }Pijnenborg, Liesbeth{ }Vercruysse \textgreek{kai} Roberto{ }Romero}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em The ``Great Obstetrical Syndromes'' are associated with disorders of deep placentation}}}}.
+\newblock {{\latintext {\em American Journal of Obstetrics and Gynecology}}}, 204(3):193--201, 2011.
+
+\bibitem{maltepe2010placenta}
+{{\latintext Emin{ }Maltepe, Anna I.{ }Bakardjiev \textgreek{kai} Susan J.{ }Fisher}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em The placenta: transcriptional, epigenetic, and physiological integration during development}}}}.
+\newblock {{\latintext {\em The Journal of Clinical Investigation}}}, 120(4):1016--1025, 2010.
+
+\bibitem{haacke1999mri}
+{{\latintext E. Mark{ }Haacke, Robert W.{ }Brown, Michael R.{ }Thompson \textgreek{kai} Ramesh{ }Venkatesan}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Magnetic Resonance Imaging: Physical Principles and Sequence Design}}}}.
+\newblock {{\latintext Wiley-Liss}}, 1999.
+
+\bibitem{mcrobbie2006mri}
+{{\latintext Donald W.{ }McRobbie, Elizabeth A.{ }Moore, Martin J.{ }Graves \textgreek{kai} Martin R.{ }Prince}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em MRI from Picture to Proton}}}}.
+\newblock {{\latintext Cambridge University Press}}, 2\textgreek{h} \textgreek{'ekdosh}, 2006.
+
+\bibitem{tustison2010n4itk}
+{{\latintext Nicholas J.{ }Tustison, Brian B.{ }Avants, Philip A.{ }Cook, Yuanjie{ }Zheng, Alexander{ }Egan, Paul A.{ }Yushkevich \textgreek{kai} James C.{ }Gee}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em N4ITK: Improved N3 Bias Correction}}}}.
+\newblock {{\latintext {\em IEEE Transactions on Medical Imaging}}}, 29(6):1310--1320, 2010.
+
+\bibitem{goodfellow2016deep}
+{{\latintext Ian{ }Goodfellow, Yoshua{ }Bengio \textgreek{kai} Aaron{ }Courville}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Deep Learning}}}}.
+\newblock {{\latintext MIT Press}}, 2016.
+
+\bibitem{bishop2006pattern}
+{{\latintext Christopher M.{ }Bishop}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Pattern Recognition and Machine Learning}}}}.
+\newblock {{\latintext Springer}}, 2006.
+
+\bibitem{litjens2017survey}
+{{\latintext Geert{ }Litjens, Thijs{ }Kooi, Babak Ehteshami{ }Bejnordi, Arnaud Arindra Adiyoso{ }Setio, Francesco{ }Ciompi, Mohsen{ }Ghafoorian, Jeroen A. W. M.van der{ }Laak, Bramvan{ }Ginneken \textgreek{kai} Clara I.{ }S{\'a}nchez}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em A survey on deep learning in medical image analysis}}}}.
+\newblock {{\latintext {\em Medical Image Analysis}}}, 42:60--88, 2017.
+
+\bibitem{milletari2016vnet}
+{{\latintext Fausto{ }Milletari, Nassir{ }Navab \textgreek{kai} Seyed Ahmad{ }Ahmadi}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation}}}}.
+\newblock {{\latintext arXiv preprint}}, 2016.
+
+\bibitem{lecun1998gradient}
+{{\latintext Yann{ }LeCun, L{\'e}on{ }Bottou, Yoshua{ }Bengio \textgreek{kai} Patrick{ }Haffner}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Gradient-Based Learning Applied to Document Recognition}}}}.
+\newblock {{\latintext {\em Proceedings of the IEEE}}}, 86(11):2278--2324, 1998.
+
+\bibitem{krizhevsky2012imagenet}
+{{\latintext Alex{ }Krizhevsky, Ilya{ }Sutskever \textgreek{kai} Geoffrey E.{ }Hinton}}.
+\newblock {\color{\colouredtextcolor} {{\latintext {\em ImageNet Classification with Deep Convolutional Neural Networks}}}}.
+\newblock {{\latintext  {\em Advances in Neural Information Processing Systems (NeurIPS)}}}, 2012.
+
+\bibitem{he2016resnet}
+{{\latintext Kaiming{ }He, Xiangyu{ }Zhang, Shaoqing{ }Ren \textgreek{kai} Jian{ }Sun}}.
+\newblock {\color{\colouredtextcolor} {{\latintext {\em Deep Residual Learning for Image Recognition}}}}.
+\newblock {{\latintext  {\em Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}}}, \textgreek{sel'ides} 770--778, 2016.
+
+\bibitem{long2015fcn}
+{{\latintext Jonathan{ }Long, Evan{ }Shelhamer \textgreek{kai} Trevor{ }Darrell}}.
+\newblock {\color{\colouredtextcolor} {{\latintext {\em Fully Convolutional Networks for Semantic Segmentation}}}}.
+\newblock {{\latintext  {\em Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}}}, \textgreek{sel'ides} 3431--3440, 2015.
+
+\bibitem{cicek20163dunet}
+{{\latintext {\"O}zg{\"u}n{ }Cicek, Ahmed{ }Abdulkadir, Soeren S.{ }Lienkamp, Thomas{ }Brox \textgreek{kai} Olaf{ }Ronneberger}}.
+\newblock {\color{\colouredtextcolor} {{\latintext {\em 3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation}}}}.
+\newblock {{\latintext  {\em Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2016}}}, \textgreek{t'omos} 9901 \textgreek{sto} {\em {{\latintext Lecture Notes in Computer Science}}}, \textgreek{sel'ides} 424--432. {{\latintext Springer}}, 2016.
+
+\bibitem{ioffe2015batchnorm}
+{{\latintext Sergey{ }Ioffe \textgreek{kai} Christian{ }Szegedy}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift}}}}.
+\newblock 2015.
+
+\bibitem{wu2018groupnorm}
+{{\latintext Yuxin{ }Wu \textgreek{kai} Kaiming{ }He}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Group Normalization}}}}.
+\newblock 2018.
+
+\bibitem{dosovitskiy2021vit}
+{{\latintext Alexey{ }Dosovitskiy, Lucas{ }Beyer, Alexander{ }Kolesnikov, Dirk{ }Weissenborn, Xiaohua{ }Zhai, Thomas{ }Unterthiner, Mostafa{ }Dehghani, Matthias{ }Minderer, Georg{ }Heigold, Sylvain{ }Gelly, Jakob{ }Uszkoreit \textgreek{kai} Neil{ }Houlsby}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale}}}}.
+\newblock {{\latintext arXiv preprint}}, 2021.
+
+\bibitem{liu2021swin}
+{{\latintext Ze{ }Liu, Yutong{ }Lin, Yue{ }Cao, Han{ }Hu, Yixuan{ }Wei, Zheng{ }Zhang, Stephen{ }Lin \textgreek{kai} Baining{ }Guo}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Swin Transformer: Hierarchical Vision Transformer using Shifted Windows}}}}.
+\newblock {{\latintext arXiv preprint}}, 2021.
+
+\bibitem{wang2020linformer}
+{{\latintext Sinong{ }Wang, Belinda Z.{ }Li, Madian{ }Khabsa, Han{ }Fang \textgreek{kai} Hao{ }Ma}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Linformer: Self-Attention with Linear Complexity}}}}.
+\newblock 2020.
+
+\bibitem{choromanski2021performer}
+{{\latintext Krzysztof{ }Choromanski \textgreek{kai} { }others}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Rethinking Attention with Performers}}}}.
+\newblock 2021.
+
+\bibitem{gu2021s4}
+{{\latintext Albert{ }Gu, Karan{ }Goel \textgreek{kai} Christopher{ }R{\'e}}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Efficiently Modeling Long Sequences with Structured State Spaces}}}}.
+\newblock 2021.
+
+\bibitem{loshchilov2019adamw}
+{{\latintext Ilya{ }Loshchilov \textgreek{kai} Frank{ }Hutter}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Decoupled Weight Decay Regularization}}}}.
+\newblock {{\latintext arXiv preprint}}, 2019.
+
+\bibitem{isensee2021nnunet}
+{{\latintext Fabian{ }Isensee, Paul F.{ }Jaeger, Simon A. A.{ }Kohl, Jens{ }Petersen \textgreek{kai} Klaus H.{ }Maier-Hein}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation}}}}.
+\newblock {{\latintext {\em Nature Methods}}}, 18(2):203--211, 2021.
 
 \end{thebibliography}
