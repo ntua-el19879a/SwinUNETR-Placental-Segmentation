@@ -76,6 +76,11 @@
 \newblock {{\latintext {\color{\colouredtextcolor} {\em Growth and function of the normal human placenta}}}}.
 \newblock {{\latintext {\em Thrombosis Research}}}, 114(5-6):397--407, 2004.
 
+\bibitem{https://doi.org/10.1111/aogs.13834}
+{{\latintext Charlotte H. J. R.{ }Jansen, Arnoud W.{ }Kastelein, C. Emily{ }Kleinrouweler, Elisabeth{ }Van~Leeuwen, Kees H.{ }De~Jong, Eva{ }Pajkrt \textgreek{kai} Cornelis J. F.{ }Van~Noorden}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Development of placental abnormalities in location and anatomy}}}}.
+\newblock {{\latintext {\em Acta Obstetricia et Gynecologica Scandinavica}}}, 99(8):983--993, 2020.
+
 \bibitem{brosens2011deepplacentation}
 {{\latintext Ivo{ }Brosens, Robert{ }Pijnenborg, Liesbeth{ }Vercruysse \textgreek{kai} Roberto{ }Romero}}.
 \newblock {{\latintext {\color{\colouredtextcolor} {\em The ``Great Obstetrical Syndromes'' are associated with disorders of deep placentation}}}}.
@@ -85,6 +90,34 @@
 {{\latintext Emin{ }Maltepe, Anna I.{ }Bakardjiev \textgreek{kai} Susan J.{ }Fisher}}.
 \newblock {{\latintext {\color{\colouredtextcolor} {\em The placenta: transcriptional, epigenetic, and physiological integration during development}}}}.
 \newblock {{\latintext {\em The Journal of Clinical Investigation}}}, 120(4):1016--1025, 2010.
+
+\bibitem{embrplace}
+{{\latintext Bordoni B.{ }Herrick~EJ}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Embryology, Placenta.}}}}
+
+\bibitem{73459184c1ce4a909dcc8bae5710cd1d}
+{{\latintext Giuseppe{ }Morgese, Samuele{ }Salti, Lukas{ }Bednar \textgreek{kai} Daniel{ }Soukup}}.
+\newblock {\color{\colouredtextcolor} {{\latintext {\em Mitigating the effects of severe imbalance in multi-class semantic segmentation}}}}.
+\newblock {{\latintext \textgreek{Metaptuqiak'h diplwmatik'h ergas'ia}}}, {{\latintext University of Bologna}}, 2024.
+
+\bibitem{Kamnitsas_2017}
+{{\latintext Konstantinos{ }Kamnitsas, Christian{ }Ledig, Virginia F.J.{ }Newcombe, Joanna P.{ }Simpson, Andrew D.{ }Kane, David K.{ }Menon, Daniel{ }Rueckert \textgreek{kai} Ben{ }Glocker}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Efficient multi-scale 3D CNN with fully connected CRF for accurate brain lesion segmentation}}}}.
+\newblock {{\latintext {\em Medical Image Analysis}}}, 36:61–78,   2017.
+
+\bibitem{Isensee_2020}
+{{\latintext Fabian{ }Isensee, Paul F.{ }Jaeger, Simon A. A.{ }Kohl, Jens{ }Petersen \textgreek{kai} Klaus H.{ }Maier-Hein}}.
+\newblock {{\latintext {\em Nature Methods}}}, (2):203–211,   2020.
+
+\bibitem{shahedi2022automatic}
+{{\latintext Maysam{ }Shahedi, James D{ }Dormer, Quyen N{ }Do, Yin{ }Xi, Matthew A{ }Lewis, Christina L{ }Herrera, Catherine Y{ }Spong, Ananth J{ }Madhuranthakam, Diane M{ }Twickler \textgreek{kai} Baowei{ }Fei}}.
+\newblock {\color{\colouredtextcolor} {{\latintext {\em Automatic segmentation of uterine cavity and placenta on MR images using deep learning}}}}.
+\newblock {{\latintext  {\em Proceedings of SPIE--the International Society for Optical Engineering}}}, \textgreek{t'omos} 12036, \textgreek{sel'ida} 1203611, 2022.
+
+\bibitem{liu2023evaluation}
+{{\latintext Yongkai{ }Liu, Fatemeh{ }Zabihollahy, Ran{ }Yan, Brian{ }Lee, Carla{ }Janzen, Sherin U{ }Devaskar \textgreek{kai} Kyunghyun{ }Sung}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Evaluation of spatial attentive deep learning for automatic placental segmentation on longitudinal MRI}}}}.
+\newblock {{\latintext {\em Journal of Magnetic Resonance Imaging}}}, 57(5):1533--1540, 2023.
 
 \bibitem{haacke1999mri}
 {{\latintext E. Mark{ }Haacke, Robert W.{ }Brown, Michael R.{ }Thompson \textgreek{kai} Ramesh{ }Venkatesan}}.
@@ -100,6 +133,11 @@
 {{\latintext Nicholas J.{ }Tustison, Brian B.{ }Avants, Philip A.{ }Cook, Yuanjie{ }Zheng, Alexander{ }Egan, Paul A.{ }Yushkevich \textgreek{kai} James C.{ }Gee}}.
 \newblock {{\latintext {\color{\colouredtextcolor} {\em N4ITK: Improved N3 Bias Correction}}}}.
 \newblock {{\latintext {\em IEEE Transactions on Medical Imaging}}}, 29(6):1310--1320, 2010.
+
+\bibitem{app14125144}
+{{\latintext Sabir{ }Muhammad \textgreek{kai} Jing{ }Zhang}}.
+\newblock {{\latintext {\color{\colouredtextcolor} {\em Segmentation of Liver Tumors by Monai and PyTorch in CT Images with Deep Learning Techniques}}}}.
+\newblock {{\latintext {\em Applied Sciences}}}, 14(12), 2024.
 
 \bibitem{goodfellow2016deep}
 {{\latintext Ian{ }Goodfellow, Yoshua{ }Bengio \textgreek{kai} Aaron{ }Courville}}.
